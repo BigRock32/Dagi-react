@@ -1,0 +1,121 @@
+
+.title-h1{
+   font-size: 40px;
+   font-family: "ProximaNova";
+   text-transform: uppercase;
+   color: var(--white-color);
+   line-height: 1.4em;
+   margin-bottom: 50px;
+}
+
+.titleH2 {
+   font-family: 'ProximaNova';
+   font-size: 35px;
+   line-height: 1.2em;
+   max-width: 400px;
+   margin-bottom: 50px;
+   color: var(--white-color);
+}
+
+.h2-large{
+   max-width: 600px;
+}
+
+.h2-tablet{
+   max-width: 350px;
+}
+
+.title-h3 {
+   font-family: 'ProximaNova';
+   font-size: 28px;
+   line-height: 1.1em;
+   color: var(--white-color);
+}
+
+.title-h4 {
+   font-family: 'ProximaNova';
+   font-size: 22px;
+   color: var(--white-color);
+}
+
+
+@media (max-width: 1440px) {
+   .title-h1{
+      font-size: 38px;
+      line-height: 1.4em;
+      margin-bottom: 50px;
+   }
+
+   .titleH2 {
+      font-size: 32px;
+   }
+
+   .h2-large{
+      max-width: 550px;
+   }
+
+   .title-h3 {
+   font-size: 25px;
+   }
+
+   .title-h4 {
+      font-size: 20px;
+   }
+}
+
+@media (max-width: 1024px) {
+   .title-h1{
+      font-size: 26px;
+      margin-bottom: 50px;
+   }
+
+   .titleH2 {
+      font-size: 28px;
+      margin-bottom: 40px;
+   }
+
+   .h2-large{
+      max-width: 550px;
+   }
+
+   .title-h3 {
+   font-size: 24px;
+   }
+
+   .title-h4 {
+      font-size: 18px;
+   }
+
+   .h2-tablet{
+      max-width: 230px;
+   }
+}
+
+@media (max-width: 450px) {
+   .title-h1{
+      font-size: 5.6vw;
+      margin-bottom: 50px;
+   }
+
+   .titleH2 {
+      font-size: 25px;
+      margin-bottom: 40px;
+      text-align: center;
+   }
+
+   .h2-large{
+      max-width: none;
+   }
+
+   .title-h3 {
+   font-size: 22px;
+   }
+
+   .title-h4 {
+      font-size: 16px;
+   }
+
+   .h2-tablet{
+      max-width: none;
+   }
+}

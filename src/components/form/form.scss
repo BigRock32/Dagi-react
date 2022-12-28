@@ -1,0 +1,232 @@
+.form {
+   position: relative;
+   width: 100%;
+   max-width: 400px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+
+      &::after{
+         content: '';
+         position: absolute;
+         top: 0;
+         left: 0;
+         z-index: 2;
+         width: 100%;
+         height: 100%;
+         background: #1A1A1AF2 url('../media/5Tkz.gif') center / 100px no-repeat;
+         opacity: 0;
+         visibility: hidden;
+         transition: all 0.5s ease;
+      }
+
+      &._sending::after{   
+         opacity: 1;
+         visibility: visible;
+      }
+
+		&__title {
+         font-family: 'ProximaNova';
+         font-size: 25px;
+         margin-bottom: 35px;
+         text-align: center;
+		}
+
+      &__change-title{
+         color: var(--white-color);
+         &::first-letter{
+            text-transform: uppercase;
+         }
+
+      }
+
+		&__item {
+         position: relative;
+         width: 100%;
+         max-width: 350px;
+         font-family: 'Gilroy';
+         font-size: 14px;
+         font-weight: 400;
+
+         &_first{
+            margin-bottom: 30px;
+         }
+		}
+
+      &__input-img{
+         position: absolute;
+         right: 15px;
+         top: 13px;
+      }
+
+		&__lable {
+         position: absolute;
+         top: 17px;
+         left: 15px;
+         z-index: 1;
+         transition: all 0.3s ease;
+         pointer-events: none;
+		}
+
+		&__input {
+         width: 100%;
+         padding: 15px;
+         border-radius: 5px;
+         background-color: rgba(248, 248, 251, 0.05);
+         border: 1px solid rgba(255, 255, 255, 0.1);
+         color: var(--white-color);
+         transition: all 0.3s ease;
+
+         &:focus{
+            border-color: var(--yellow);
+            background-color: rgba(255, 255, 255, 0);
+            
+            & ~ .form__lable{
+               top: -5px;
+               font-size: 12px;
+               background-color: var(--main-color);
+               padding: 0 5px;
+               color: var(--yellow);
+            }
+
+            & ~ .form__input-img{
+               fill: var(--yellow);
+               opacity: 1;
+            }
+         }
+
+         &:not(:placeholder-shown) ~ .form__lable{
+            top: -5px;
+            font-size: 12px;
+            background-color: var(--main-color);
+            padding: 0 5px;
+            color: var(--yellow);
+         }
+
+         &:not(:placeholder-shown) ~ .form__input-img{
+            fill: var(--yellow);
+            opacity: 1;
+         }
+
+         &:not(:placeholder-shown){
+            background-color: rgba(255, 255, 255, 0);
+         }
+
+         &._error{
+            border-color: red;
+         }
+		}
+
+		&__button {
+         margin-top: 30px;
+         padding: 16px 25px;
+         background: linear-gradient(90deg, #FFDD2D, #FFC42D);
+         border-radius: 5px;
+         font-family: 'ProximaNova';
+		}
+}
+
+
+@media (max-width: 1440px) {
+   
+}
+
+@media (max-width: 1024px) {
+   
+}
+
+@media (max-width: 768px) {
+   
+}
+
+@media (max-width: 450px) {
+   .form {
+      width: 100%;
+      max-width: 400px;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+   
+         &__title {
+            font-size: 22px;
+            margin-bottom: 25px;
+            text-align: center;
+         }
+   
+         &__change-title{
+            color: var(--yellow);
+            text-transform: lowercase;
+         }
+   
+         &__item {
+            position: relative;
+            width: 100%;
+            max-width: none;
+            font-size: 14px;
+            font-weight: 400;
+   
+            &_first{
+               margin-bottom: 20px;
+            }
+         }
+   
+         &__input-img{
+            right: 15px;
+            top: 13px;
+         }
+   
+         &__lable {
+            top: 17px;
+            left: 15px;
+         }
+   
+         &__input {
+            width: 100%;
+            padding: 15px;
+            border-radius: 5px;
+   
+            &:focus{
+               border-color: var(--yellow);
+               background-color: rgba(255, 255, 255, 0);
+               
+               & ~ .form__lable{
+                  top: -5px;
+                  font-size: 12px;
+                  background-color: var(--main-color);
+                  padding: 0 5px;
+                  color: var(--yellow);
+               }
+   
+               & ~ .form__input-img{
+                  fill: var(--yellow);
+                  opacity: 1;
+               }
+            }
+   
+            &:not(:placeholder-shown) ~ .form__lable{
+               top: -5px;
+               font-size: 12px;
+               background-color: var(--main-color);
+               padding: 0 5px;
+               color: var(--yellow);
+            }
+   
+            &:not(:placeholder-shown) ~ .form__input-img{
+               fill: var(--yellow);
+               opacity: 1;
+            }
+   
+            &:not(:placeholder-shown){
+               background-color: rgba(255, 255, 255, 0);
+            }
+         }
+   
+         &__button {
+            margin-top: 25px;
+            padding: 16px 25px;
+            border-radius: 5px;
+            width: 100%;
+         }
+   }
+}
