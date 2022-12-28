@@ -1,6 +1,6 @@
 import logo from './../../media/logo.svg'
-import whatsapp from './../../media/whatsapp.svg'
-import tg from './../../media/telegram.svg'
+import whatsapp from './../../media/Whatsapp.svg'
+import tg from './../../media/Telegram.svg'
 
 import './footer.scss'
 
