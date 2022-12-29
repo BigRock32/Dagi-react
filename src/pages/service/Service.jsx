@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import { services } from '../../helpers/servicesList';
 
 
-import ContactForm from '../../components/contact-form/ContactForm';
+import ServiceForm from '../../components/service-form/ServiceForm';
 import st from './service.module.scss'
 
 
@@ -35,7 +35,7 @@ const Service = () => {
                   <img src={serviceAnim} alt="" className={st.service__animImg} />
                </div>
             </div>
-            <ContactForm />
+            <ServiceForm />
          </div>
       </section>
    );

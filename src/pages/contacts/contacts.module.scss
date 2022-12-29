@@ -1,0 +1,59 @@
+.contacts {
+   padding-bottom: 120px;
+
+   &__title {
+      color: var(--yellow);
+   }
+
+   &__row{
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__content {
+      
+   }
+
+   &__contentRow{
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+   }
+
+   &__titleH2 {
+      margin-bottom: 20px;
+   }
+
+   &__subtitle {
+      color: inherit;
+
+      &_link {
+         transition: color 0.3s ease;
+
+         &:hover {
+            color: var(--yellow);
+         }
+      }
+   }
+
+   &__socials {
+      margin-bottom: 20px;
+   }
+
+   &__link {
+      margin-bottom: 0px;
+      transition: color 0.3s ease;
+
+      &:hover {
+         color: var(--yellow);
+      }
+   }
+
+   &__sep {
+      margin: 0px 10px 0px 10px;
+   }
+
+   &__form{
+      width: 48%;
+   }
+}
