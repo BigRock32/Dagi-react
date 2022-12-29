@@ -19,7 +19,7 @@ import { useEffect, useRef } from 'react'
 import ProjectsOnHome from '../../components/projects/Projects'
 import TitleH2 from '../../components/title-h2/TitleH2'
 import Servises from '../../components/services/Services'
-import Questions from '../../components/questions/questions'
+import Questions from '../../components/questions/Questions'
 
 const Home = (props) => {
    
