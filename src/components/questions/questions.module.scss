@@ -43,56 +43,14 @@
       width: 69%;
    }
 
-	&__question {
-      border-radius: 10px;
-      border: 1px solid var(--border-color);
-      background: var(--light-bg);
-	}
-
-	&__question-head {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 25px;
-      cursor: pointer;
-
-      &:hover{
-         .questions__question-title{
-            color: var(--yellow);
-         }
-      }
-	}
-
-	&__question-title {
-      transition: color 0.35s ease;
-      user-select: none;
-	}
-
-	&__question-icon {
-      transition: transform .4s ease;
-	}
-
-	&__question-body {
-      padding: 0 25px;
-      max-height: 0px;
-      overflow: hidden;
-      transition: all .4s ease-in;
-      overflow: auto;
-	}
-
-	&__question-text {
-      padding-bottom: 20px;
-      line-height: 1.3em;
-	}
-
-   &__bg-img {
+   &__bgImg {
       position: absolute;
       left: -2%;
       bottom: -23%;
       z-index: 1;
    }
 
-   &__bg-gradient {
+   &__bgGradient {
       position: absolute;
       left: -17%;
       bottom: -67%;
@@ -105,134 +63,108 @@
    }
 }
 
-.rotate .questions__question-icon{
-   transform: rotate(180deg);
-}
-
 @media (max-width: 1440px) {
-   .questions{
+   .questions {
       padding-bottom: 100px;
 
-      &__wrap{
+      &__wrap {
          padding: 30px;
          gap: 60px;
       }
 
-      &__intro{
+      &__intro {
          width: 36%;
       }
 
-      &__content{
+      &__content {
          width: 64%;
       }
 
-      &__bg-img{
+      &__bgImg {
          left: -2%;
          bottom: -23%;
       }
 
-      &__subtitle{
+      &__subtitle {
          font-size: 18px;
          padding-bottom: 25px;
       }
 
-      &__question-head{
-         padding: 20px;
-      }
-
-      &__question-text{
-         font-size: 18px;
-      }
-
-      &__btn{
+      &__btn {
          font-size: 16px;
       }
    }
 }
 
 @media (max-width: 1024px) {
-   .questions{
+   .questions {
       padding-bottom: 80px;
 
-      &__wrap{
+      &__wrap {
          padding: 20px;
          gap: 30px;
          flex-direction: column;
       }
 
-      &__intro{
+      &__intro {
          width: 39%;
       }
 
-      &__content{
+      &__content {
          width: 100%;
          gap: 15px;
       }
 
-      &__bg-img{
+      &__bgImg {
          position: absolute;
          top: 5%;
          left: 77%;
          max-width: 200px;
       }
 
-      &__bg-gradient {
+      &__bgGradient {
          left: 80%;
          top: -67%;
          height: 500px;
          width: 500px;
       }
 
-      &__subtitle{
+      &__subtitle {
          font-size: 18px;
          padding-bottom: 25px;
       }
 
-      &__question-head{
-         padding: 15px;
-      }
-
-      &__question-body {
-         padding: 0 15px;
-      }
-
-      &__question-text{
-         font-size: 16px;
-      }
-
-      &__btn{
+      &__btn {
          font-size: 15px;
       }
    }
 }
 
-
-
 @media (max-width: 450px) {
-   .questions{
+   .questions {
       padding-bottom: 80px;
 
-      &__wrap{
+      &__wrap {
          padding: 15px;
          gap: 30px;
          flex-direction: column;
       }
 
-      &__intro{
+      &__intro {
          width: 100%;
       }
 
-      &__title{
+      &__title {
          text-align: left;
          margin-bottom: 10px;
       }
 
-      &__content{
+      &__content {
          width: 100%;
          gap: 15px;
       }
 
-      &__bg-img{
+      &__bgImg {
          position: absolute;
          top: 5%;
          left: 77%;
@@ -240,40 +172,19 @@
          display: none;
       }
 
-      &__bg-gradient {
+      &__bgGradient {
          left: 80%;
          top: -67%;
          height: 500px;
          width: 500px;
       }
 
-      &__subtitle{
+      &__subtitle {
          font-size: 14px;
          padding-bottom: 20px;
       }
 
-      &__question-title{
-         margin-right: 15px;
-      }
-
-      &__question-head{
-         padding: 10px;
-         align-items: start;
-      }
-
-      &__question-body {
-         padding: 0 10px;
-      }
-
-      &__question-icon{
-         margin-top: 3px;
-      }
-
-      &__question-text{
-         font-size: 14px;
-      }
-
-      &__btn{
+      &__btn {
          font-size: 14px;
          width: 100%;
       }

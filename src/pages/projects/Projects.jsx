@@ -1,20 +1,20 @@
 
-import ProjectsOnHome from '../../components/projects/Projects';
-import st from './projects.module.scss'
+import Projects from '../../components/projects/Projects';
+import st from './projectsPage.module.scss'
 
 
 
-const Projects = () => {
+const ProjectsPage = () => {
    return (
       <>
          <section className={`${st.projects} first-screen-padding`}>
             <div className="container">
                <h1 className={`${st.projects__title} title-h1`}>Реализованные нами <span className="yellow-text">проекты</span></h1>
-               <ProjectsOnHome />
+               <Projects />
             </div>
          </section>
       </>
    );
 }
 
-export default Projects;
+export default ProjectsPage;

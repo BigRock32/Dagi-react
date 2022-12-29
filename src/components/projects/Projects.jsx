@@ -6,7 +6,7 @@ import st from './projects.module.scss'
 
 import { projects } from '../../helpers/projectsList';
 
-const ProjectsOnHome = () => {
+const Projects = () => {
    return (
       <section className={st.projects}>
          <div className="container">
@@ -24,4 +24,4 @@ const ProjectsOnHome = () => {
    );
 }
 
-export default ProjectsOnHome;
+export default Projects;

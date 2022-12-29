@@ -1,7 +1,6 @@
 import tgFix from './../../media/tg-fixed.svg'
 import user from './../../media/icon_user.svg'
 import check from './../../media/check.svg'
-import questArrow from './../../media/question-arrow.svg'
 import pc from './../../media/pc.png'
 import arrow from './../../media/arrow.svg'
 import bannerBg from './../../media/banner-1-bg.svg'
@@ -10,7 +9,6 @@ import chat from './../../media/chat-ico.png'
 import grafic from './../../media/grafic-ico.png'
 import list from './../../media/list-ico.png'
 import reword from './../../media/reword-ico.png'
-import server from './../../media/server.png'
 import animJson from "./firstScreenAnim.json"
 
 
@@ -21,6 +19,7 @@ import { useEffect, useRef } from 'react'
 import ProjectsOnHome from '../../components/projects/Projects'
 import TitleH2 from '../../components/title-h2/TitleH2'
 import Servises from '../../components/services/Services'
+import Questions from '../../components/questions/questions'
 
 const Home = (props) => {
    
@@ -238,63 +237,7 @@ const Home = (props) => {
                </div>
             </div>
          </section>
-
-         <section className="questions">
-            <div className="container">
-               <div className="questions__wrap">
-                  <div className="questions__intro">
-                     <h2 className="questions__title titleH2">Возможно у вас <span className="yellow-text">остались вопросы к нам</span>
-                     </h2>
-                     <div className="questions__subtitle">Не нашли ответа на свой вопрос? Задайте его нам, а мы не будем отвечать</div>
-                     <a href="" className="questions__btn btn">Написать нам</a>
-                  </div>
-                  <div className="questions__content">
-                     <div className="questions__question">
-                        <div className="questions__question-head">
-                           <div className="questions__question-title title-h4">Вы работаете по договору?</div>
-                           <img src={questArrow} alt="" className="questions__question-icon" />
-                        </div>
-                        <div className="questions__question-body">
-                           <p className="questions__question-text">Да, все условия, ответственности сторон, этапность, сроки и стоимость прописаны в договоре.</p>
-                        </div>
-                     </div>
-                     <div className="questions__question">
-                        <div className="questions__question-head">
-                           <div className="questions__question-title title-h4">Смогу ли я самостоятельно редактировать контент на сайте?</div>
-                           <img src={questArrow} alt="" className="questions__question-icon" />
-                        </div>
-                        <div className="questions__question-body">
-                           <div>
-                              <p className="questions__question-text">Ко всем сайтам мы подключаем админ панель, что позволяет редактировать значительную составляющую вашего сайта. Чтобы вам было легче разобраться, мы лично обучим Вас управлять сайтом через админ панель. Вы запросто сможете отредактировать текст, либо фотографии, а так же изменить порядок блоков на сайте.</p>
-                           </div>
-                        </div>
-                     </div>
-                     <div className="questions__question">
-                        <div className="questions__question-head">
-                           <div className="questions__question-title title-h4">Могу ли я отслеживать как много людей посещает мой сайт?</div>
-                           <img src={questArrow} alt="" className="questions__question-icon" />
-                        </div>
-                        <div className="questions__question-body">
-                           <p className="questions__question-text">Да, мы подключаем инструменты для сбора статистики посещений сайта. Вы сможете увидеть подробные отчеты и графики о том, как много людей зашло на ваш сайт, сколько времени они на нем провели и какие страницы посещали.</p>
-                        </div>
-                     </div>
-                     <div className="questions__question">
-                        <div className="questions__question-head">
-                           <div className="questions__question-title title-h4">Что такое хостинг и домен?</div>
-                           <img src={questArrow} alt="" className="questions__question-icon" />
-                        </div>
-                        <div className="questions__question-body">
-                           <p className="questions__question-text">Представьте, что сайт - это компания в интернете.У любой компании есть адрес и фактическое местоположение (здание, офисный центр, где находится компания).
-                              Адрес - это домен, ссылка на сайт. Именно зная домен мы можем прийти на сайт. (Как в песне группы "Ленинград": "...Мой адрес не дом и не улица, мой адрес сегодня такой: www.leningrad.ru...")
-                              Местоположение - это хостинг, где находится сайт.(Его физическое место нахождения)</p>
-                        </div>
-                     </div>
-                  </div>
-                  <img src={server} alt="" className="questions__bg-img" />
-                  <div className="questions__bg-gradient"></div>
-               </div>
-            </div>
-         </section>
+      <Questions toggleQuestions={props.toggleQuestions} />
 
       </div>
    );

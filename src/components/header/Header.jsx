@@ -17,7 +17,7 @@ const Header = (props) => {
 
    return (
       <>
-         <header className="header">
+         <header className={props.fixed ? `header _fixed` : `header`}>
             <div className="header__row">
                <NavLink to='/' className={({ isActive }) => isActive ? activeLink : normalLink}>
                   <img src={logo} alt="" />

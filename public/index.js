@@ -1,17 +1,6 @@
 'use strict'
 
-//Анимация шапки
-const header = document.querySelector('.header');
 
-window.addEventListener('scroll', () => {
-    let scrollTop = window.pageYOffset;
-
-    if (scrollTop >= 10) {
-        header.classList.add('_fixed');
-    } else {
-        header.classList.remove('_fixed');
-    }
-});
 
 // const mediaQuery = window.matchMedia('(min-width: 768px)')
 
