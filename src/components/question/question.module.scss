@@ -7,7 +7,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 20px 25px;
+      padding: 20px 25px 0px 25px;
 
       cursor: pointer;
 
@@ -30,14 +30,24 @@
    }
 
    &__body {
-      padding: 0 25px;
+      padding: 0 25px 25px 25px;
       height: 0px;
-      overflow: auto;
       transition: all 0.4s ease;
+      overflow: hidden;
+
+      &::-webkit-scrollbar {
+         margin-right: 10px;
+      }
+   }
+
+   &__textBox{
+      overflow: auto;
+      height: 100%;
+      margin-top: 10px;
+      padding-right: 20px;
    }
 
    &__text {
-      padding-bottom: 20px;
       line-height: 1.3em;
    }
 }
@@ -72,7 +82,7 @@
 @media (max-width: 1440px) {
    .question {
       &__head {
-         padding: 16px 20px;
+         padding: 20px 20px 0px 20px;
       }
 
       &__title {
@@ -80,11 +90,15 @@
       }
 
       &__body {
-         padding: 0 20px;
+         padding: 0 20px 20px 20px;
       }
 
       &__text {
          font-size: 18px;
+
+      }
+
+      &__textBox{
       }
 
       &__icon {
