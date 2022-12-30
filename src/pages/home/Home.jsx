@@ -21,9 +21,10 @@ import ProjectsOnHome from '../../components/projects/Projects'
 import TitleH2 from '../../components/title-h2/TitleH2'
 import Servises from '../../components/services/Services'
 import Questions from '../../components/questions/Questions'
+import Cooperate from '../../components/cooperate/Cooperate'
 
 const Home = (props) => {
-   
+
    const container = useRef(null)
 
    useEffect(() => {
@@ -63,7 +64,7 @@ const Home = (props) => {
                      <h1 className="first-screen__title title-h1"><span className="yellow-text">Разработка</span> уникальных сайтов для вашего бизнеса</h1>
                      <p className="first-screen__subtitle">Мы современная команда со свежим взглядом и эффективным подходом к веб-разработке. Нашей целью в каждом проекте является достижение максимального результата.
                      </p>
-                     <a href="" className="first-screen__btn btn"  onClick={props.openModal}>Заказть консультацию</a>
+                     <a href="" className="first-screen__btn btn" onClick={props.openModal}>Заказть консультацию</a>
                   </div>
                   <div className="first-screen__right">
                      <div className="first-screen__anim" ref={container}></div>
@@ -72,41 +73,7 @@ const Home = (props) => {
             </div>
          </section>
 
-         <section className="cooperate">
-            <div className="container">
-               <h2 className="titleH2"><span className="yellow-text">Принципы нашего</span> сотрудничества</h2>
-               <div className="cooperate__row">
-                  <div className="cooperate__item">
-                     <div className="cooperate__number-box cooperate__number-box_first">
-                        <div className="cooperate__number">1</div>
-                     </div>
-                     <div className="cooperate__content">
-                        <h3 className="cooperate__title">Живое общение</h3>
-                        <p className="cooperate__text">Наша коммуникация  с клиентом проходит добрым и адеквтаным общением. Никакой бюрократии в общении</p>
-                     </div>
-                  </div>
-                  <div className="cooperate__item">
-                     <div className="cooperate__number-box">
-                        <div className="cooperate__number">2</div>
-                     </div>
-                     <div className="cooperate__content">
-                        <h3 className="cooperate__title">Анализ конкурентов</h3>
-                        <p className="cooperate__text">Перед разработкой сайта, мы проводим анализ ваших потенциальных клиентов и
-                           выявляем. </p>
-                     </div>
-                  </div>
-                  <div className="cooperate__item">
-                     <div className="cooperate__number-box">
-                        <div className="cooperate__number">3</div>
-                     </div>
-                     <div className="cooperate__content">
-                        <h3 className="cooperate__title">Достойный результат</h3>
-                        <p className="cooperate__text">Выполняем свою работу максимально эффективно для вашего продукта.</p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
+         <Cooperate />
 
          <Servises />
 
@@ -136,10 +103,9 @@ const Home = (props) => {
                                  <path className="results__item-icon" d="M2 9L9.64645 16.6464C9.84171 16.8417 10.1583 16.8417 10.3536 16.6464L25 2" stroke="#FFDD2D" strokeWidth="3" strokeLinecap="round" />
                               </svg>
                            </div>
-                           <h3 className="results__title title-h3">Анализ конкурентов</h3>
+                           <h3 className="results__title title-h3">Рост вашего бизнеса</h3>
                         </div>
-                        <p className="results__item-text">Перед разработкой сайта, мы проводим анализ ваших потенциальных клиентов и
-                           выявляем их главные потребности. </p>
+                        <p className="results__item-text">Разработанный нами сайт выделится среди ваших конкуретнов и обеспечит поток заинтерисованных клиентов. </p>
                      </div>
                      <div className="results__item">
                         <div className="results__item-top">
@@ -148,10 +114,10 @@ const Home = (props) => {
                                  <path className="results__item-icon" d="M2 9L9.64645 16.6464C9.84171 16.8417 10.1583 16.8417 10.3536 16.6464L25 2" stroke="#FFDD2D" strokeWidth="3" strokeLinecap="round" />
                               </svg>
                            </div>
-                           <h3 className="results__title title-h3">Анализ конкурентов</h3>
+                           <h3 className="results__title title-h3">Увеличение конверсии</h3>
                         </div>
-                        <p className="results__item-text">Перед разработкой сайта, мы проводим анализ ваших потенциальных клиентов и
-                           выявляем их главные потребности. </p>
+                        <p className="results__item-text">Мы проводим анализ ваших потенциальных клиентов и
+                           выявляем их главные потребности.</p>
                      </div>
                      <div className="results__item">
                         <div className="results__item-top">
@@ -160,10 +126,9 @@ const Home = (props) => {
                                  <path className="results__item-icon" d="M2 9L9.64645 16.6464C9.84171 16.8417 10.1583 16.8417 10.3536 16.6464L25 2" stroke="#FFDD2D" strokeWidth="3" strokeLinecap="round" />
                               </svg>
                            </div>
-                           <h3 className="results__title title-h3">Анализ конкурентов</h3>
+                           <h3 className="results__title title-h3">Продвижение услуг</h3>
                         </div>
-                        <p className="results__item-text">Перед разработкой сайта, мы проводим анализ ваших потенциальных клиентов и
-                           выявляем их главные потребности. </p>
+                        <p className="results__item-text">Получение новых возможностей для продвижения и продажи ваших услуг с помощью рекламы вашего сайта.</p>
                      </div>
                      <div className="results__item">
                         <div className="results__item-top">
@@ -172,10 +137,9 @@ const Home = (props) => {
                                  <path className="results__item-icon" d="M2 9L9.64645 16.6464C9.84171 16.8417 10.1583 16.8417 10.3536 16.6464L25 2" stroke="#FFDD2D" strokeWidth="3" strokeLinecap="round" />
                               </svg>
                            </div>
-                           <h3 className="results__title title-h3">Анализ конкурентов</h3>
+                           <h3 className="results__title title-h3">Повышение доверия</h3>
                         </div>
-                        <p className="results__item-text">Перед разработкой сайта, мы проводим анализ ваших потенциальных клиентов и
-                           выявляем их главные потребности. </p>
+                        <p className="results__item-text">Получение новых возможностей для продвижения и продажи ваших услуг с помощью рекламы вашего сайта.</p>
                      </div>
                   </div>
                </div>
@@ -200,7 +164,7 @@ const Home = (props) => {
                   <a href="" className="steps__item">
                      <div className="steps__content">
                         <h3 className="steps__title title-h3"><span className="steps__number">1.</span> Оставьте заявку</h3>
-                        <div className="steps__text">Закажите бесплатную консультацию по вашей задачи. Мы подберем оптимальное решение для начала работа над проектом. Вы можете выбрать любой удобный для вас способ общения с нами (мессенджеры, онлайн-встречи)</div>
+                        <div className="steps__text">Закажите бесплатную консультацию по вашей задачи. Мы подберем оптимальное решение для начала работа над проектом.</div>
                         <div className="steps__btn arrow-btn">
                            <div className="steps__btn-text">Перейти к услуге</div>
                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -213,24 +177,24 @@ const Home = (props) => {
                   </a>
                   <div className="steps__item">
                      <div className="steps__content">
-                        <h3 className="steps__title title-h3"><span className="steps__number">2.</span> Определяем цели проекта</h3>
-                        <div className="steps__text">Закажите бесплатную консультацию по вашей задачи. Мы подберем оптимальное решение для начала работа над проектом. Вы можете выбрать любой удобный для вас способ общения с нами (мессенджеры, онлайн-встречи, а так же личные встречи в офисе)</div>
+                        <h3 className="steps__title title-h3"><span className="steps__number">2.</span> Определяем задачи</h3>
+                        <div className="steps__text">На этом этапе мы испольуем фирменный бриф для определения целей и ожиданий от проекта.</div>
                      </div>
                      <img src={list} alt="" className="steps__img" />
                      <div className="steps__bg-gradient"></div>
                   </div>
                   <div className="steps__item">
                      <div className="steps__content">
-                        <h3 className="steps__title title-h3"><span className="steps__number">3.</span> Конкурентный анализ</h3>
-                        <div className="steps__text">Закажите бесплатную консультацию по вашей задачи. Мы подберем оптимальное решение для начала работа над проектом. Вы можете выбрать любой удобный для вас способ общения с нами (мессенджеры, онлайн-встречи)</div>
+                        <h3 className="steps__title title-h3"><span className="steps__number">3.</span> Процесс разработки</h3>
+                        <div className="steps__text">Основной этап создания сайта, включающий в себя разработку дизайна, а так же програмирования технической стороны.</div>
                      </div>
                      <img src={grafic} alt="" className="steps__img" />
                      <div className="steps__bg-gradient"></div>
                   </div>
                   <div className="steps__item">
                      <div className="steps__content">
-                        <h3 className="steps__title title-h3"><span className="steps__number">4.</span> Получаете готовый сайт</h3>
-                        <div className="steps__text">Закажите бесплатную консультацию по вашей задачи. Мы подберем оптимальное решение для начала работа над проектом. Вы можете выбрать любой удобный для вас способ общения с нами (мессенджеры, онлайн-встречи)</div>
+                        <h3 className="steps__title title-h3"><span className="steps__number">4.</span> Готовый сайт</h3>
+                        <div className="steps__text">Заключительным этапом ялвяется передача реализованного проекта вместе с инструкцией по его функционалу</div>
                      </div>
                      <img src={reword} alt="" className="steps__img reword" />
                      <div className="steps__bg-gradient"></div>
@@ -238,7 +202,7 @@ const Home = (props) => {
                </div>
             </div>
          </section>
-      <Questions toggleQuestions={props.toggleQuestions} />
+         <Questions toggleQuestions={props.toggleQuestions} />
 
       </div>
    );

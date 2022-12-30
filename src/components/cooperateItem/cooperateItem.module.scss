@@ -1,24 +1,15 @@
-.cooperate {
-   padding-bottom: 120px;
+.item {
+   display: flex;
+   flex: 0 0 31%;
 
-   &__row {
-      display: flex;
-      justify-content: space-between;
-   }
-
-   &__item {
-      display: flex;
-      flex: 0 0 31%;
-
-      &:hover{
-         .cooperate__number-box {
-            color: var(--yellow);
-         }
+   &:hover {
+      .cooperate__number-box {
+         color: var(--yellow);
       }
    }
 
-   &__number-box {
-      font-family: 'Poppins';
+   &__numberBox {
+      font-family: "Poppins";
       font-weight: 700;
       font-size: 180px;
       line-height: 0.82em;
@@ -27,15 +18,15 @@
       transition: color 0.3s linear;
    }
 
+   &__content {
+   }
+
    &__number {
       margin-right: 25px;
    }
 
-   &__content {
-   }
-
    &__title {
-      font-family: 'ProximaNova';
+      font-family: "ProximaNova";
       font-size: 28px;
       line-height: 1.1em;
       color: var(--white-color);
@@ -47,13 +38,17 @@
    }
 }
 
-
 @media (max-width: 1440px) {
-   .cooperate {
-      padding-bottom: 100px;
-      padding-top: 70px;
+   .item {
+      display: flex;
+      flex: 0 0 30.3%;
 
-      &__number-box {
+      &:nth-child(2){
+      flex: 0 0 35%;
+
+      }
+
+      &__numberBox {
          font-size: 160px;
       }
 
@@ -68,30 +63,21 @@
       &__number {
          margin-right: 20px;
       }
-
-      &__item {
-         display: flex;
-         flex: 0 0 32%;
-      }
    }
 }
 
 @media (max-width: 1024px) {
    .cooperate {
-      padding-bottom: 80px;
-      padding-top: 50px;
+      display: flex;
+      flex: 0 0 100%;
+      align-items: center;
 
-      &__row{
-         flex-wrap: wrap;
-         gap: 25px;
-      }
-
-      &__number-box {
+      &__numberBox {
          font-size: 120px;
          text-align: end;
          margin-right: 15px;
 
-         &_first{
+         &_first {
             padding: 0px 10px 0px 10px;
          }
       }
@@ -107,32 +93,24 @@
       &__number {
          margin-right: 0px;
       }
-
-      &__item {
-         display: flex;
-         flex: 0 0 100%;
-         align-items: center;
-      }
    }
 }
 
 @media (max-width: 450px) {
-   .cooperate {
-      padding-bottom: 80px;
-      padding-top: 50px;
+   .item {
+      display: flex;
+      flex: 0 0 100%;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
 
-      &__row{
-         flex-wrap: wrap;
-         gap: 30px;
-      }
-
-      &__number-box {
+      &__numberBox {
          font-size: 120px;
          text-align: end;
          margin-right: 0px;
          margin-bottom: 15px;
 
-         &_first{
+         &_first {
             padding: 0px 10px 0px 10px;
          }
       }
@@ -148,14 +126,6 @@
 
       &__number {
          margin-right: 0px;
-      }
-
-      &__item {
-         display: flex;
-         flex: 0 0 100%;
-         align-items: center;
-         flex-direction: column;
-         text-align: center;
       }
    }
 }

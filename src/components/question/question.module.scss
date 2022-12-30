@@ -30,14 +30,9 @@
 
    &__body {
       padding: 0 25px;
-      // max-height: 0px;
       height: 0px;
       overflow: auto;
       transition: all 0.4s ease;
-
-      // &._open{
-      //    max-height: 1000px;
-      // }
    }
 
    &__text {
@@ -79,8 +74,20 @@
          padding: 20px;
       }
 
+      &__title {
+         font-size: 19px;
+      }
+
+      &__body {
+         padding: 0 20px;
+      }
+
       &__text {
          font-size: 18px;
+      }
+
+      &__icon {
+         width: 18px;
       }
    }
 }
