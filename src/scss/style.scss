@@ -44,7 +44,8 @@
 ::-webkit-scrollbar {
    width: 4px;
    height: 0;
-   background-color: var(--main-color);
+   background-color: var(--border-color);
+   border-radius: 3px;
    transition: background-color 0.3s;
 }
 ::-webkit-scrollbar-thumb {
