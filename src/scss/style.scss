@@ -42,6 +42,22 @@
    font-style: normal;
 }
 
+::-webkit-scrollbar {
+   width: 4px;
+   height: 0;
+   background-color: var(--main-color);
+   transition: background-color 0.3s;
+}
+::-webkit-scrollbar-thumb {
+   background-color: var(--yellow);
+   border-radius: 3px;
+   box-shadow: none;
+   transition: background-color 0.3s;
+}
+::-webkit-scrollbar-thumb:hover {
+   background-color: #DDB900;
+}
+
 body{
 font-family: 'Gilroy';
 font-size: 20px;

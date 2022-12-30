@@ -55,11 +55,17 @@
    }
 
    &__animation{
-      
+      position: relative;
+      overflow: hidden;
+      width: 50%;
    }
 
-   &__animImg{
-      max-width: 550px;
+   &__anim{
+
+      width: 920px;
+      position: absolute;
+      top: -90px;
+      right: -80px;
    }
 }
 

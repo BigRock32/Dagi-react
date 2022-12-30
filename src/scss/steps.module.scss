@@ -14,9 +14,17 @@
       &:hover{
          background: var(--yellow);
 
-         .steps__title, .steps__text, .steps__number{
+         .steps__title, .steps__text, .steps__number, .steps__btn-text{
             color: var(--main-color);
          }
+
+         .arrow{
+            fill: var(--main-color);
+         }
+      }
+
+      .arrow{
+         transition: all 0.35 ease;
       }
 
       position: relative;
@@ -54,11 +62,16 @@
    &__btn {
       margin-top: 15px;
       color: var(--yellow);
+      display: flex;
+      align-items: center;
    }
 
    &__btn-text {
       margin-bottom: 3px;
       margin-right: 5px;
+      font-family: 'ProximaNova';
+      font-size: 18px;
+      transition: all 0.35 ease;
    }
 
    &__img {

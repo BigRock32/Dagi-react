@@ -18,11 +18,7 @@ const Project = () => {
          <div className="container">
                <h1 className={`${st.projects__title} title-h1`}>{project.title} <span className="yellow-text"></span></h1>
                <div className={`${st.project__head} ${st.head}`}>
-                  <div className={st.head__left}>
-                     <div className={st.head__lable}>Описание:</div>
-                     <p className={st.head__text}>{project.descriptBig}</p>
-                  </div>
-                  <div className={st.head__right}>
+               <div className={st.head__top}>
                      <div className={st.head__lable}>Технологии:</div>
                      <div className={st.head__imgRow}>
                         <img src={project.skills.figma} alt="" className={st.head__img} />
@@ -30,6 +26,10 @@ const Project = () => {
                         <img src={project.skills.figma} alt="" className={st.head__img} />
                         <img src={project.skills.psd} alt="" className={st.head__img} />
                      </div>
+                  </div>
+                  <div className={st.head__bottom}>
+                     <div className={st.head__lable}>Описание:</div>
+                     <p className={st.head__text}>{project.descriptBig}</p>
                   </div>
                </div>
             <div className={st.project__wrap}>

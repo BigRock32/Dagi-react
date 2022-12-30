@@ -2,18 +2,34 @@ import { useParams } from 'react-router-dom';
 
 import { services } from '../../helpers/servicesList';
 
+import lottie from 'lottie-web'
+import { useEffect, useRef } from 'react'
 
 import ServiceForm from '../../components/service-form/ServiceForm';
 import st from './service.module.scss'
 
+import animJson from "./serviceAnim.json"
 
-
-import serviceAnim from './../../media/service-anim.svg'
 
 const Service = () => {
    const {id} = useParams()
 
    const service = services[id]
+
+   const container = useRef(null)
+
+   useEffect(() => {
+      lottie.loadAnimation({
+         container: container.current,
+         rerender: 'svg',
+         loop: true,
+         autoplay: true,
+         animationData: animJson
+      })
+      return () => {
+         lottie.destroy();
+      }
+   }, [])
 
    return (
       <section className={`${st.service} first-screen-padding`}>
@@ -32,7 +48,7 @@ const Service = () => {
                   <p className={st.service__text}>{service.descript}</p>
                </div>
                <div className={st.service__animation}>
-                  <img src={serviceAnim} alt="" className={st.service__animImg} />
+                  <div className={st.service__anim} ref={container} ></div>
                </div>
             </div>
             <ServiceForm />

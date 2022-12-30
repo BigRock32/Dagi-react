@@ -14,7 +14,7 @@ const Modal = (props) => {
 
             <div className={st.modal__content} >
                <div className={st.modal__bgCircle}></div>
-               <div className={`${st.modal__bgCircle} modal__bg-circle_right`}></div>
+               <div className={`${st.modal__bgCircle} ${st.modal__bgCircle_right}`}></div>
                <img src={cross} alt="закрыть" className={st.modal__closeIcon} onClick={props.closeModal}/>
                <Form titleText={props.titleText}/>
             </div>
