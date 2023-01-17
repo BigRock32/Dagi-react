@@ -107,7 +107,7 @@
       }
 
       &__intro {
-         width: 39%;
+         width: 37%;
       }
 
       &__content {
@@ -130,12 +130,20 @@
       }
 
       &__subtitle {
-         font-size: 18px;
+         font-size: 16px;
          padding-bottom: 25px;
       }
 
       &__btn {
          font-size: 15px;
+      }
+   }
+}
+
+@media (max-width: 768px) {
+   .questions{
+      &__intro{
+         width: 51%;
       }
    }
 }

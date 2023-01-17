@@ -55,8 +55,6 @@
 
 .question._open{
    .question__body{
-
-      // max-height: 120px;
       height: 120px;
    }
 }
@@ -110,16 +108,26 @@
 
 @media (max-width: 1024px) {
    .question {
+      &__title {
+         font-size: 18px;
+      }
+
       &__head {
-         padding: 15px;
+         padding: 15px 15px 0px 15px;
       }
 
       &__body {
-         padding: 0 15px;
+         padding: 0 15px 15px 15px;
       }
 
       &__text {
          font-size: 16px;
+      }
+   }
+
+   .question._open{
+      .question__body{
+         height: 100px;
       }
    }
 }
@@ -130,16 +138,18 @@
 @media (max-width: 450px) {
    .question {
       &__title {
-         margin-right: 15px;
+         margin-right: 10px;
+         font-size: 16px;
+         line-height: 1.3rem;
       }
 
       &__head {
-         padding: 10px;
+         padding: 10px 10px 0px 10px;
          align-items: start;
       }
 
       &__body {
-         padding: 0 10px;
+         padding: 0 10px 10px 10px;
       }
 
       &__icon {
@@ -148,6 +158,10 @@
 
       &__text {
          font-size: 14px;
+      }
+
+      &__textBox{
+         height: 88%;
       }
    }
 }

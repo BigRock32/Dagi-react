@@ -1,11 +1,11 @@
-.project{
+.project {
    width: 47.7%;
 
-   &:hover{
-      .project__title{
+   &:hover {
+      .project__title {
          color: var(--yellow);
       }
-      .project__img{
+      .project__img {
          scale: 1.04;
       }
    }
@@ -36,10 +36,8 @@
    }
 }
 
-
 @media (max-width: 1440px) {
    .project {
-
       &__text {
          font-size: 18px;
       }
@@ -50,10 +48,8 @@
    }
 }
 
-
 @media (max-width: 1024px) {
    .project {
-
       &__text {
          font-size: 16px;
       }
@@ -63,7 +59,7 @@
       }
 
       &__img {
-         height: 400px;
+         height: 350px;
       }
 
       &__imageBox {
@@ -72,10 +68,8 @@
    }
 }
 
-
 @media (max-width: 768px) {
    .project {
-
       &__text {
          font-size: 16px;
       }
@@ -85,7 +79,7 @@
       }
 
       &__img {
-         height: 300px;
+         height: 260px;
       }
 
       &__imageBox {
@@ -96,6 +90,7 @@
 
 @media (max-width: 450px) {
    .project {
+      width: 100%;
 
       &__text {
          font-size: 14px;
@@ -106,7 +101,7 @@
       }
 
       &__img {
-         height: 290px;
+         height: 250px;
       }
 
       &__imageBox {

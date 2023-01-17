@@ -11,7 +11,7 @@
    z-index: 100;
    border: 1px solid var(--border-color);
    border-radius: 15px;
-   font-family: 'ProximaNova';
+   font-family: "ProximaNova";
    font-weight: 700;
    box-shadow: 0px 1px 1px #00000040;
    transition: all 0.5s;
@@ -30,101 +30,33 @@
    &__logo {
    }
 
-   &__nav {
-      display: flex;
-      gap: 40px;
-   }
-
-   &__nav-list {
-      display: flex;
-      width: 100%;
-      gap: 40px;
-      align-items: flex-end;
-   }
-
-   &__nav-list li{
-      position: relative;
-   }
-
-   &__nav-list>li:hover .header__sub-nav-list{
-      display: block;
-   }
-
-   &__nav-list>li:hover ._yellow-link{
-      color: var(--yellow);
-   }
-
-   &__nav-list>li:hover .link-svg{
-      transform: rotate(180deg);
-      stroke: var(--yellow);
-   }
-
-   .link-wrap{
-      display: flex;
-      align-items: center;
-   }
-
-   .link-svg{
-      margin-left: 5px;
-      transition: all 0.2s linear;
-   }
-
-   &__sub-nav-list{
-      display: none;
-      position: absolute;
-      left: -15px;
-      top: 100%;
-      padding: 15px 0px 0px 0px;
-      width: 200px;
-   }
-
-   .nav-list-wrap>li{
-      padding-bottom: 10px;
-      border-bottom: 1px solid var(--border-color);
-   }
-
-   .nav-list-wrap>li:last-child{
-      padding-bottom: 0px;
-      border-bottom: none;
-   }
-
-   .nav-list-wrap{
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-      border: 1px solid var(--border-color);
-      border-radius: 10px;
-      padding: 15px;
-      background-color: var(--main-color);
-   }
-
    &__link {
       color: var(--white-color);
       font-size: 18px;
       transition: color 0.35s ease;
 
-      &:hover{
+      &:hover {
          color: var(--yellow);
       }
 
-      &_active{
+      &_active {
          color: var(--yellow);
       }
 
-      &_sub-link{
+      &_sub-link {
          font-family: "Gilroy";
          font-weight: normal;
-         color: #FFFFFF;
+         color: #ffffff;
          opacity: 0.7;
          transition: opacity 0.3s linear;
 
-         &_active{
+         &_active {
             opacity: 1;
          }
 
-         &:hover{
+         &:hover {
             font-family: "Gilroy";
-            color: #FFFFFF;
+            color: #ffffff;
             opacity: 1;
          }
       }
@@ -146,17 +78,16 @@
    display: none;
 }
 
-.burger-menu{
+.burger-menu {
    display: none;
 }
 
-
-.header._fixed{
+.header._fixed {
    width: 100%;
    border-radius: 0px;
-   border-top-color: #FFFFFF00;
-   border-left-color: #FFFFFF00;
-   border-right-color: #FFFFFF00;
+   border-top-color: #ffffff00;
+   border-left-color: #ffffff00;
+   border-right-color: #ffffff00;
    transform: translateY(-40px);
    backdrop-filter: blur(4px);
 }
@@ -166,7 +97,7 @@
    padding: 15px 15px;
    transition: all 0.35s ease;
 
-   &:hover{
+   &:hover {
       color: var(--yellow);
       border-color: var(--yellow);
    }
@@ -177,128 +108,113 @@
    color: var(--yellow);
    transition: all 0.35s ease;
 
-   &:hover{
+   &:hover {
       background: var(--yellow);
       color: var(--main-color);
    }
 }
 
-
 @media (max-width: 1440px) {
-   .header{
+   .header {
       width: 1170px;
       padding: 0px 30px 0px 30px;
       top: 30px;
 
-         &__link {
-            display: block;
-            font-size: 16px;
-         }
-
-         &__row{
-            max-width: 1170px;
-            padding: 20px 0px 20px 0px;
-         }
-      }
-
-      .btn-lang {
-         padding: 14px 14px;
-         font-size: 14px;
-      }
-
-      .btn-yellow {
-         padding: 14px 24px;
-         font-size: 14px;
-      }
-
-      .header._fixed{
-         transform: translateY(-30px);
-      }
-   }
-
-
-@media (max-width: 1024px) {
-   .header{
-      width: 950px;
-      padding: 0px 20px 0px 20px;
-   
       &__link {
          display: block;
-         font-size: 15px;
+         font-size: 16px;
       }
-   
-      &__row{
-         max-width: 950px;
+
+      &__row {
+         max-width: 1170px;
+         padding: 20px 0px 20px 0px;
       }
    }
-   
+
    .btn-lang {
       padding: 14px 14px;
       font-size: 14px;
    }
-   
+
    .btn-yellow {
       padding: 14px 24px;
       font-size: 14px;
    }
 
-   .header._fixed{
+   .header._fixed {
       transform: translateY(-30px);
    }
 }
 
+@media (max-width: 1024px) {
+   .header {
+      width: 950px;
+      padding: 0px 20px 0px 20px;
+
+      &__link {
+         display: block;
+         font-size: 15px;
+      }
+
+      &__row {
+         max-width: 950px;
+      }
+   }
+
+   .btn-lang {
+      padding: 14px 14px;
+      font-size: 14px;
+   }
+
+   .btn-yellow {
+      padding: 14px 24px;
+      font-size: 14px;
+   }
+
+   .header._fixed {
+      transform: translateY(-30px);
+   }
+}
 
 @media (max-width: 768px) {
-   .header{
+   .header {
       width: 708px;
       padding: 0px 20px 0px 20px;
       z-index: 101;
       top: 0;
       width: 100%;
       border-radius: 0px;
-      border-top-color: #FFFFFF00;
-      border-left-color: #FFFFFF00;
-      border-right-color: #FFFFFF00;
-   
+      border-top-color: #ffffff00;
+      border-left-color: #ffffff00;
+      border-right-color: #ffffff00;
+
+      &__row {
+         max-width: 708px;
+      }
+
       &__link {
          display: block;
          font-size: 28px;
       }
-   
-      &__row{
-         max-width: 708px;
-      }
 
-      &__nav {
-         display: none;
-         gap: 40px;
-      }
-
-      &__nav-list{
-         flex-direction: column;
-         align-items: center;
-         gap: 20px;
-      }
-
-      &__btns{
+      &__btns {
          display: none;
          flex-grow: 1;
          align-items: end;
          gap: 15px;
          margin-top: 30px;
 
-         &_mob{
+         &_mob {
             display: flex;
          }
       }
    }
-   
 
-   .header._fixed{
+   .header._fixed {
       transform: translateY(-0px);
    }
 
-   .burger{
+   .burger {
       display: block;
       position: relative;
       width: 30px;
@@ -308,7 +224,7 @@
 
    .burger span,
    .burger::before,
-   .burger::after{
+   .burger::after {
       left: 0;
       position: absolute;
       height: 13%;
@@ -319,38 +235,38 @@
    }
 
    .burger::before,
-   .burger::after{
+   .burger::after {
       content: "";
    }
 
-   .burger span{
+   .burger span {
       top: 50%;
       transform: scale(1) translate(0px, -50%);
    }
 
-   .burger::before{
+   .burger::before {
       top: 0;
    }
 
-   .burger::after{
+   .burger::after {
       bottom: 0;
    }
 
-   .burger._active span{
+   .burger._active span {
       transform: scale(0) translate(0px, -50%);
    }
 
-   .burger._active::before{
+   .burger._active::before {
       top: 50%;
       transform: rotate(-45deg) translate(0px, -50%);
    }
 
-   .burger._active::after{
+   .burger._active::after {
       bottom: 48%;
       transform: rotate(45deg) translate(0px, 50%);
    }
 
-   .burger-menu{
+   .burger-menu {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -361,22 +277,22 @@
       height: 100vh;
       width: 100%;
       z-index: 100;
-      background: #1A1A1A;
+      background: #1a1a1a;
       transition: all 0.5s ease;
       opacity: 0.98;
       backdrop-filter: blur(3px);
       overflow: auto;
    }
 
-   .burger-menu._active{
+   .burger-menu._active {
       left: 0;
    }
-   
-   .social-btns{
+
+   .social-btns {
       margin-top: 30px;
    }
 
-   .header-ic{
+   .header-ic {
       width: 60px;
       height: 60px;
    }
@@ -384,13 +300,13 @@
    .btn-yellow {
       border: 0px solid var(--yellow);
       padding: 18px 25px;
-      font-family: 'ProximaNova';
+      font-family: "ProximaNova";
       font-size: 14px;
       color: var(--main-color);
       transition: all 0s ease;
-      background: linear-gradient(90deg, #FFDD2D, #FFC42D);
-   
-      &:hover{
+      background: linear-gradient(90deg, #ffdd2d, #ffc42d);
+
+      &:hover {
          background: var(--yellow);
          color: var(--main-color);
       }
@@ -401,46 +317,44 @@
       padding: 18px 20px;
       transition: all 0.35s ease;
       color: var(--yellow);
-      font-family: 'ProximaNova';
+      font-family: "ProximaNova";
       font-size: 14px;
 
-      &:hover{
+      &:hover {
          color: var(--yellow);
          border-color: var(--yellow);
       }
    }
 }
 
-
-
 @media (max-width: 450px) {
-   .header{
-      &__btns{
+   .header {
+      &__btns {
          display: none;
          flex-grow: 1;
          align-items: end;
          gap: 15px;
          margin-top: 30px;
 
-         &_mob{
+         &_mob {
             display: flex;
             width: 100%;
          }
       }
    }
 
-   .burger-menu{
+   .burger-menu {
       padding: 94px 15px 20px 15px;
    }
 
-   .btn-lang{
+   .btn-lang {
       width: 20%;
       display: flex;
       align-items: center;
       justify-content: center;
    }
 
-   .btn-yellow{
+   .btn-yellow {
       display: flex;
       width: 80%;
       align-items: center;

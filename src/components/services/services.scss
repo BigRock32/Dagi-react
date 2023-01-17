@@ -1,0 +1,81 @@
+.services {
+}
+
+section.horizontal {
+   overflow-x: hidden;
+   padding-bottom: 120px;
+}
+
+.h2Sticky {
+   position: absolute;
+   top: 0px;
+   left: 9.5vw;
+   z-index: 10;
+}
+
+.animationWrap {
+   display: flex;
+   position: relative;
+   z-index: 1;
+}
+
+.pinWrap {
+   display: flex;
+   padding-top: 120px;
+   position: relative;
+   z-index: 1;
+}
+
+.animationWrap {
+   gap: 30px;
+   padding-left: 9.5vw;
+}
+
+@media (max-width: 1440px) {
+   .services {
+   }
+}
+
+@media (max-width: 1024px) {
+   .services {
+      padding-bottom: 80px;
+   }
+
+   .h2Sticky {
+      left: 3.5vw;
+   }
+
+   .animationWrap {
+      padding-left: 3.5vw;
+   }
+}
+
+@media (max-width: 768px) {
+   .services {
+      padding-bottom: 80px;
+   }
+}
+
+@media (max-width: 450px) {
+   .services {
+      padding-bottom: 80px;
+   }
+
+   .h2Sticky {
+      left: auto;
+      width: 100%;
+      text-align: center;
+   }
+
+   .pinWrap {
+      padding: 100px 0px 0px 15px;
+   }
+
+   .animationWrap {
+      padding-left: 0vw;
+      gap: 20px;
+   }
+}
+
+@media (max-width: 320px) {
+}

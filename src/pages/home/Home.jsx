@@ -17,6 +17,7 @@ import animJson from "./firstScreenAnim.json"
 import lottie from 'lottie-web'
 import { useEffect, useRef } from 'react'
 
+
 import ProjectsOnHome from '../../components/projects/Projects'
 import TitleH2 from '../../components/title-h2/TitleH2'
 import Servises from '../../components/services/Services'
@@ -41,6 +42,11 @@ const Home = (props) => {
    }, [])
 
 
+   //services
+
+   
+
+
    return (
       <div className="wrapper">
          <a href="" className="fixed-tg-link">
@@ -61,7 +67,7 @@ const Home = (props) => {
             <div className="container">
                <div className="first-screen__intro">
                   <div className="first-screen__left">
-                     <h1 className="first-screen__title title-h1"><span className="yellow-text">Разработка</span> уникальных сайтов для вашего бизнеса</h1>
+                     <h1 className="first-screen__title title-h1"><span className="yellow-text">Разработка и дизайн</span> сайтов для вашего бизнеса</h1>
                      <p className="first-screen__subtitle">Мы современная команда со свежим взглядом и эффективным подходом к веб-разработке. Нашей целью в каждом проекте является достижение максимального результата.
                      </p>
                      <a href="" className="first-screen__btn btn" onClick={props.openModal}>Заказть консультацию</a>

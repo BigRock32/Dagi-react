@@ -19,6 +19,7 @@ import Modal from './components/modal/Modal'
 import { useState } from 'react'
 
 import { questions } from './helpers/questionsList'
+import Burger from './components/burger/Burger'
 
 
 function App(props) {
@@ -75,6 +76,16 @@ function App(props) {
   }
 
 
+  // Burger
+  const [navActive, setNavActive] = useState(false)
+
+  const burgerOpen = () => {
+    document.body.classList.toggle('_lock')
+    setNavActive(!navActive)
+  }
+
+
+
   return (
     <div className="App">
 
@@ -82,7 +93,9 @@ function App(props) {
 
         <ScrollToTop />
 
-        <Header active={modalActive} openModal={openModal} fixed={headerFixed} />
+        <Header active={modalActive} openModal={openModal} fixed={headerFixed} setNav={burgerOpen} nav={navActive} />
+
+        <Burger nav={navActive} setNav={burgerOpen}/>
 
         <Routes>
           <Route path='/' element={<Home active={modalActive} openModal={openModal} toggleQuestions={toggleQuestions} />} />

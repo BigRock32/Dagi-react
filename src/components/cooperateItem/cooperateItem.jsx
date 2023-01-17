@@ -3,7 +3,7 @@ import st from './cooperateItem.module.scss'
 const CooperateItem = ({number, title, text}) => {
    return (
       <div className={st.item}>
-         <div className={`${st.item__numberBox} ${st.item__numberBox_first}`}>
+         <div className={st.item__numberBox}>
             <div className={st.item__number}>{number}</div>
          </div>
          <div className={st.item__content}>

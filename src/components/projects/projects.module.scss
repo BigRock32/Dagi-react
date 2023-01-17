@@ -35,7 +35,6 @@
 
 @media (max-width: 768px) {
    .projects {
-      padding-bottom: 80px;
 
       &__row {
          display: flex;
@@ -52,7 +51,6 @@
       &__row {
          display: flex;
          gap: 30px;
-         flex-direction: column-reverse;
          text-align: center;
       }
    }
