@@ -3,7 +3,7 @@ import st from './form.module.scss'
 const Form = (props) => {
 
    return (
-      <form action="#" id="form" className={st.form} netlify>
+      <form action="#" name="mainForm" id="form" className={st.form} netlify>
          <h2 className={st.form__title} >{props.titleText}</h2>
          <div className={`${st.form__item} ${st.form__item_first}`}>
             <input id="formName" type="text" name="name" placeholder=" " className={`${st.form__input} _req`} />
