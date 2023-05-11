@@ -2,7 +2,6 @@ import st from './form.module.scss'
 
 const Form = (props) => {
 
-
    return (
       <form action="#" id="form" className={st.form} netlify>
          <h2 className={st.form__title} >{props.titleText}</h2>
