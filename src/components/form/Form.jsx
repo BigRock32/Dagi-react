@@ -4,6 +4,7 @@ const Form = (props) => {
 
    return (
       <form data-netlify="true" action="#" name="mainForm" id="form" className={st.form}>
+         <input type="hidden" name="mainForm" value="name"></input>
          <h2 className={st.form__title} >{props.titleText}</h2>
          <div className={`${st.form__item} ${st.form__item_first}`}>
             <input id="formName" type="text" name="name" placeholder=" " className={`${st.form__input} _req`} />
