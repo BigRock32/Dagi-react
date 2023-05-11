@@ -3,7 +3,7 @@ import st from './serviceForm.module.scss'
 
 const ServiceForm = () => {
    return (
-      <form action="#" id='form' className={st.form} netlify>
+      <form action="#" id='form' className={st.form}>
          <div className={`${st.form__title} title-h3`}>Оставить <span className='yellow-text'>заявку</span></div>
          <div className={st.form__row}>
             <div className={st.form__item}>
