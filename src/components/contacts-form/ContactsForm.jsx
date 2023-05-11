@@ -2,7 +2,7 @@ import st from './contactsForm.module.scss'
 
 const ContactsForm = () => {
    return (
-      <form action="#" id="form" className={st.form}>
+      <form action="#" id="form" className={st.form} netlify>
          <h2 className={`${st.form__title} title-h3`}>Оставить <span className='yellow-text'>заявку</span></h2>
          <div className={`${st.form__item} ${st.form__item_first}`}>
             <input id="formName" type="text" name="name" placeholder=" " className={`${st.form__input} _req`} />
