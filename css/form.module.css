@@ -1,0 +1,215 @@
+.form {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.form::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background: rgba(26, 26, 26, 0.9490196078) url("../media/5Tkz.gif") center/100px no-repeat;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease;
+}
+.form._sending::after {
+  opacity: 1;
+  visibility: visible;
+}
+.form__title {
+  font-family: "ProximaNova";
+  font-size: 25px;
+  margin-bottom: 35px;
+  text-align: center;
+}
+.form__change-title {
+  color: var(--white-color);
+}
+.form__change-title::first-letter {
+  text-transform: uppercase;
+}
+.form__item {
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+  font-family: "Gilroy";
+  font-size: 14px;
+  font-weight: 400;
+}
+.form__item_first {
+  margin-bottom: 30px;
+}
+.form__inputImg {
+  position: absolute;
+  right: 15px;
+  top: 13px;
+}
+.form__lable {
+  position: absolute;
+  top: 17px;
+  left: 15px;
+  z-index: 1;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+.form__input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: rgba(248, 248, 251, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--white-color);
+  transition: all 0.3s ease;
+}
+.form__input:focus {
+  border-color: var(--yellow);
+  background-color: rgba(255, 255, 255, 0);
+}
+.form__input:focus ~ .form__lable {
+  top: -5px;
+  font-size: 12px;
+  background-color: var(--main-color);
+  padding: 0 5px;
+  color: var(--yellow);
+}
+.form__input:focus ~ .form__inputImg {
+  fill: var(--yellow);
+  opacity: 1;
+}
+.form__input:not(:-moz-placeholder-shown) ~ .form__lable {
+  top: -5px;
+  font-size: 12px;
+  background-color: var(--main-color);
+  padding: 0 5px;
+  color: var(--yellow);
+}
+.form__input:not(:placeholder-shown) ~ .form__lable {
+  top: -5px;
+  font-size: 12px;
+  background-color: var(--main-color);
+  padding: 0 5px;
+  color: var(--yellow);
+}
+.form__input:not(:-moz-placeholder-shown) ~ .form__inputImg {
+  fill: var(--yellow);
+  opacity: 1;
+}
+.form__input:not(:placeholder-shown) ~ .form__inputImg {
+  fill: var(--yellow);
+  opacity: 1;
+}
+.form__input:not(:-moz-placeholder-shown) {
+  background-color: rgba(255, 255, 255, 0);
+}
+.form__input:not(:placeholder-shown) {
+  background-color: rgba(255, 255, 255, 0);
+}
+.form__input._error {
+  border-color: red;
+}
+.form__button {
+  margin-top: 30px;
+  padding: 16px 25px;
+  background: linear-gradient(90deg, #FFDD2D, #FFC42D);
+  border-radius: 5px;
+  font-family: "ProximaNova";
+}
+
+@media (max-width: 450px) {
+  .form {
+    width: 100%;
+    max-width: 400px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .form__title {
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  .form__change-title {
+    color: var(--yellow);
+    text-transform: lowercase;
+  }
+  .form__item {
+    position: relative;
+    width: 100%;
+    max-width: none;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .form__item_first {
+    margin-bottom: 20px;
+  }
+  .form__inputImg {
+    right: 15px;
+    top: 13px;
+  }
+  .form__lable {
+    top: 17px;
+    left: 15px;
+  }
+  .form__input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  .form__input:focus {
+    border-color: var(--yellow);
+    background-color: rgba(255, 255, 255, 0);
+  }
+  .form__input:focus ~ .form__lable {
+    top: -5px;
+    font-size: 12px;
+    background-color: var(--main-color);
+    padding: 0 5px;
+    color: var(--yellow);
+  }
+  .form__input:focus ~ .form__inputImg {
+    fill: var(--yellow);
+    opacity: 1;
+  }
+  .form__input:not(:-moz-placeholder-shown) ~ .form__lable {
+    top: -5px;
+    font-size: 12px;
+    background-color: var(--main-color);
+    padding: 0 5px;
+    color: var(--yellow);
+  }
+  .form__input:not(:placeholder-shown) ~ .form__lable {
+    top: -5px;
+    font-size: 12px;
+    background-color: var(--main-color);
+    padding: 0 5px;
+    color: var(--yellow);
+  }
+  .form__input:not(:-moz-placeholder-shown) ~ .form__inputImg {
+    fill: var(--yellow);
+    opacity: 1;
+  }
+  .form__input:not(:placeholder-shown) ~ .form__inputImg {
+    fill: var(--yellow);
+    opacity: 1;
+  }
+  .form__input:not(:-moz-placeholder-shown) {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  .form__input:not(:placeholder-shown) {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  .form__button {
+    margin-top: 25px;
+    padding: 16px 25px;
+    border-radius: 5px;
+    width: 100%;
+  }
+}

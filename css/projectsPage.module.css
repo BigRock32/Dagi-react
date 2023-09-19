@@ -1,0 +1,7 @@
+.projects__row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.projects__title {
+  max-width: 500px;
+}

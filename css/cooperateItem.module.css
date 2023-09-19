@@ -1,0 +1,106 @@
+.item {
+  display: flex;
+  flex: 0 0 31%;
+}
+.item:hover .item__numberBox {
+  color: var(--yellow);
+}
+.item__numberBox {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 180px;
+  line-height: 0.82em;
+  color: transparent;
+  -webkit-text-stroke: 2px var(--yellow);
+  transition: color 0.3s linear;
+}
+.item__number {
+  margin-right: 25px;
+}
+.item__title {
+  font-family: "ProximaNova";
+  font-size: 28px;
+  line-height: 1.1em;
+  color: var(--white-color);
+  margin-bottom: 10px;
+}
+.item__text {
+  line-height: 1.3em;
+}
+
+@media (max-width: 1440px) {
+  .item {
+    display: flex;
+    flex: 0 0 30.3%;
+  }
+  .item:nth-child(2) {
+    flex: 0 0 35%;
+  }
+  .item__numberBox {
+    font-size: 160px;
+  }
+  .item__title {
+    font-size: 25px;
+  }
+  .item__text {
+    font-size: 18px;
+  }
+  .item__number {
+    margin-right: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  .item {
+    display: flex;
+    flex: 0 0 100%;
+    align-items: center;
+  }
+  .item:nth-child(2) {
+    flex: 0 0 100%;
+  }
+  .item:nth-child(1) .item__numberBox {
+    padding: 0px 10px 0px 10px;
+  }
+  .item__numberBox {
+    font-size: 120px;
+    text-align: end;
+    margin-right: 15px;
+  }
+  .item__title {
+    font-size: 24px;
+  }
+  .item__text {
+    font-size: 16px;
+  }
+  .item__number {
+    margin-right: 0px;
+  }
+}
+@media (max-width: 450px) {
+  .item {
+    display: flex;
+    flex: 0 0 100%;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .item__numberBox {
+    font-size: 120px;
+    text-align: end;
+    margin-right: 0px;
+    margin-bottom: 15px;
+  }
+  .item__numberBox_first {
+    padding: 0px 10px 0px 10px;
+  }
+  .item__title {
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+  .item__text {
+    font-size: 14px;
+  }
+  .item__number {
+    margin-right: 0px;
+  }
+}

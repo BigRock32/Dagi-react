@@ -1,0 +1,43 @@
+.contacts {
+  padding-bottom: 120px;
+}
+.contacts__title {
+  color: var(--yellow);
+}
+.contacts__row {
+  display: flex;
+  justify-content: space-between;
+}
+.contacts__contentRow {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.contacts__titleH2 {
+  margin-bottom: 20px;
+}
+.contacts__subtitle {
+  color: inherit;
+}
+.contacts__subtitle_link {
+  transition: color 0.3s ease;
+}
+.contacts__subtitle_link:hover {
+  color: var(--yellow);
+}
+.contacts__socials {
+  margin-bottom: 20px;
+}
+.contacts__link {
+  margin-bottom: 0px;
+  transition: color 0.3s ease;
+}
+.contacts__link:hover {
+  color: var(--yellow);
+}
+.contacts__sep {
+  margin: 0px 10px 0px 10px;
+}
+.contacts__form {
+  width: 48%;
+}

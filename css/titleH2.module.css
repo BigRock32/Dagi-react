@@ -1,0 +1,27 @@
+.titleH2 {
+  font-family: "ProximaNova";
+  font-size: 35px;
+  line-height: 1.2em;
+  max-width: 400px;
+  margin-bottom: 50px;
+  color: var(--white-color);
+}
+
+@media (max-width: 1440px) {
+  .titleH2 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 1024px) {
+  .titleH2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 450px) {
+  .titleH2 {
+    font-size: 25px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+}

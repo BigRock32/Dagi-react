@@ -1,0 +1,40 @@
+.link {
+  font-family: "ProximaNova";
+  font-size: 20px;
+  color: var(--yellow);
+}
+.link:hover .link__line-2 {
+  width: 0%;
+}
+.link:hover .link__line {
+  width: 100%;
+}
+.link__line-box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+.link__line {
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, #ffdd2d, #ffc42d);
+  transition: all 0.3s linear;
+}
+.link__line-2 {
+  width: 20%;
+  height: 2px;
+  background: linear-gradient(90deg, #ffdd2d, #ffc42d);
+  transition: all 0.3s linear;
+}
+
+@media (max-width: 1024px) {
+  .link {
+    font-size: 15px;
+  }
+}
+@media (max-width: 450px) {
+  .link {
+    font-size: 14px;
+    margin: 0px auto;
+  }
+}

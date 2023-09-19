@@ -1,0 +1,119 @@
+.question {
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  background: var(--light-bg);
+}
+.question__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 25px 0px 25px;
+  cursor: pointer;
+}
+.question__head:hover .question__title {
+  color: var(--yellow);
+}
+.question__title {
+  transition: color 0.35s ease;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  font-family: "ProximaNova";
+  color: var(--white-color);
+}
+.question__icon {
+  transition: transform 0.4s ease;
+}
+.question__body {
+  padding: 0 25px 25px 25px;
+  height: 0px;
+  transition: all 0.4s ease;
+  overflow: hidden;
+}
+.question__body::-webkit-scrollbar {
+  margin-right: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.question__textBox {
+  overflow: auto;
+  height: 100%;
+  margin-top: 10px;
+  padding-right: 20px;
+}
+.question__text {
+  line-height: 1.3em;
+}
+
+.question._open .question__body {
+  height: 120px;
+}
+
+.question._open .question__icon {
+  transform: rotate(180deg);
+}
+
+.question._open .question__title {
+  color: var(--yellow);
+}
+
+.rotate .question__icon {
+  transform: rotate(180deg);
+}
+
+@media (max-width: 1440px) {
+  .question__head {
+    padding: 20px 20px 0px 20px;
+  }
+  .question__title {
+    font-size: 19px;
+  }
+  .question__body {
+    padding: 0 20px 20px 20px;
+  }
+  .question__text {
+    font-size: 18px;
+  }
+  .question__icon {
+    width: 18px;
+  }
+}
+@media (max-width: 1024px) {
+  .question__title {
+    font-size: 18px;
+  }
+  .question__head {
+    padding: 15px 15px 0px 15px;
+  }
+  .question__body {
+    padding: 0 15px 15px 15px;
+  }
+  .question__text {
+    font-size: 16px;
+  }
+  .question._open .question__body {
+    height: 100px;
+  }
+}
+@media (max-width: 450px) {
+  .question__title {
+    margin-right: 10px;
+    font-size: 16px;
+    line-height: 1.3rem;
+  }
+  .question__head {
+    padding: 10px 10px 0px 10px;
+    align-items: start;
+  }
+  .question__body {
+    padding: 0 10px 10px 10px;
+  }
+  .question__icon {
+    margin-top: 3px;
+  }
+  .question__text {
+    font-size: 14px;
+  }
+  .question__textBox {
+    height: 88%;
+  }
+}

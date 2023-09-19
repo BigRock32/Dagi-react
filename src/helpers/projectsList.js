@@ -2,13 +2,13 @@ import subboxPrev from './../media/subbox-prev.png'
 import subboxBig from './../media/subbox-big.png'
 
 import tzpchPrev from './../media/tzpch-prev.png'
-import tzpchBig from './../media/tzpch-big.png'
+import tzpchBig from './../media/subbox-big.png'
 
 import proactivePrev from './../media/proactive-prev.png'
 import proactiveBig from './../media/proactive-big.png'
 
 import greenwayPrev from './../media/greenway-prev.png'
-import greenwayBig from './../media/greenway-big.png'
+import greenwayBig from './../media/subbox-big.png'
 
 import figma from './../media/figma.svg'
 import psd from './../media/psd.svg'
