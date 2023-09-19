@@ -329,6 +329,12 @@
 
 @media (max-width: 450px) {
    .header {
+      &__link{
+         &_sub-link{
+            font-size: 20px;
+         }
+      }
+
       &__btns {
          display: none;
          flex-grow: 1;

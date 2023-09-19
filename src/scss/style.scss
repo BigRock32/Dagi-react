@@ -302,6 +302,10 @@ body._lock{
       padding: 16px 25px;
       border-radius: 10px;
    }
+
+   .bg-blur-circle, .circ-2, .circ-3, .circ-4, .orng, .orng-2, .yellow{
+      display: none;
+   }
 }
 
 @media (max-width: 320px) {
