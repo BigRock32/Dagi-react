@@ -1,0 +1,35 @@
+.button {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 12px;
+   width: 100%;
+   padding: 16px 20px;
+   background: linear-gradient(90deg, #ffdd2d, #ffc42d);
+   border-radius: 12px;
+   font-family: "ProximaNova";
+   font-size: 18px;
+   color: var(--white-color);
+   background: linear-gradient(90deg, #2fa6e2 0%, #2e9bd9 100%);
+}
+
+@media (max-width: 450px) {
+   .button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      width: 100%;
+      padding: 10px 20px;
+      background: linear-gradient(90deg, #ffdd2d, #ffc42d);
+      border-radius: 12px;
+      font-family: "ProximaNova";
+      font-size: 15px;
+      color: var(--white-color);
+      background: linear-gradient(90deg, #2fa6e2 0%, #2e9bd9 100%);
+   }
+
+   .tgIcon{
+      width: 22px;
+   }
+}

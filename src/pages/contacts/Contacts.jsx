@@ -20,11 +20,11 @@ const Contacts = () => {
                            <span className={`${st.contacts__sep} titleH2`}>/</span>
                            <a href="" className={`${st.contacts__link} titleH2`}>WhatsApp</a>
                         </div>
-                        <div className={st.contacts__subtitle}>+7 (999) 999-92-12 </div>
+                        <div className={st.contacts__subtitle}>+7 (981) 173-42-34 </div>
                      </div>
                      <div className={st.contacts__item}>
                         <h2 className={`${st.contacts__titleH2} titleH2`}>Email</h2>
-                        <a href='' className={`${st.contacts__subtitle} ${st.contacts__subtitle_link}`}>Dagiweb@gmail.com</a>
+                        <a href='mailto:dev@dagiweb.com' className={`${st.contacts__subtitle} ${st.contacts__subtitle_link}`}>dev@dagiweb.com</a>
                      </div>
                   </div>
                </div>

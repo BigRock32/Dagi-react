@@ -1,0 +1,7 @@
+button {
+  width: 14%;
+  padding: 15px 25px;
+  background: linear-gradient(90deg, #FFDD2D, #FFC42D);
+  border-radius: 5px;
+  font-family: "ProximaNova";
+}

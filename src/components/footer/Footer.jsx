@@ -3,6 +3,7 @@ import whatsapp from './../../media/Whatsapp.svg'
 import tg from './../../media/Telegram.svg'
 
 import './footer.scss'
+import { NavLink } from 'react-router-dom'
 
 
 const Footer = () => {
@@ -16,12 +17,12 @@ const Footer = () => {
                         <img src={logo} alt="" className="footer__logo-img" />
                      </div>
                      <div className="footer__nav">
-                        <a data-goto=".steps" href="#" className="footer__link">Главная</a>
-                        <a data-goto=".projects" href="#" className="footer__link">Проекты</a>
-                        <a href="" className="footer__link">Контакты</a>
+                        <NavLink to='/' className="footer__link">Главная</NavLink>
+                        <NavLink to='/projects' className="footer__link">Проекты</NavLink>
+                        <NavLink to='/contacts' className="footer__link">Контакты</NavLink>
                      </div>
                      <div className="footer__social">
-                        <a href="" className="footer__icon">
+                        {/* <a href="" className="footer__icon">
                            <svg className="footer__icon" width="56" height="56" viewBox="0 0 56 56" fill="none" stroke="white" strokeOpacity="0.2" xmlns="http://www.w3.org/2000/svg">
                               <g filter="url(#filter0_b_664_930)">
                                  <rect width="56" height="56" rx="15" fill="white" fillOpacity="0.04" />
@@ -42,8 +43,8 @@ const Footer = () => {
                                  </clipPath>
                               </defs>
                            </svg>
-                        </a>
-                        <a href="" className="footer__icon">
+                        </a> */}
+                        <a href="https://t.me/Vaska325" className="footer__icon">
                            <svg className="footer__icon" width="56" height="56" viewBox="0 0 56 56" fill="none" stroke="white" strokeOpacity="0.2" xmlns="http://www.w3.org/2000/svg">
                               <g filter="url(#filter0_b_664_933)">
                                  <rect width="56" height="56" rx="15" fill="white" fill-opacity="0.04" />
@@ -63,10 +64,10 @@ const Footer = () => {
                   <div className="footer__subtop">
                      
                      <div className="footer__social footer__social_mob">
-                        <a href="" className="footer__icon">
+                        {/* <a href="" className="footer__icon">
                            <img src={whatsapp} alt="" />
-                        </a>
-                        <a href="" className="footer__icon">
+                        </a> */}
+                        <a href="https://t.me/Vaska325" className="footer__icon">
                            <img src={tg} alt="" />
                         </a>
                      </div>
@@ -74,7 +75,7 @@ const Footer = () => {
                </div>
                <div className="footer__bottom">
                   <div className="footer__copywright">© 2022 Dagi-web. Все права защищены</div>
-                  <a href="" className="footer__mail">Newshift.lehagey@gmail.com</a>
+                  <a href="mailto:dev@dagiweb.com" className="footer__mail">dev@dagiweb.com</a>
                   <a href="" className="footer__privacy">политика конфиденциальности</a>
                </div>
             </div>

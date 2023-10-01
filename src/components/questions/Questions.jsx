@@ -6,7 +6,7 @@ import { questions } from '../../helpers/questionsList';
 import server from './../../media/server.png'
 
 
-const Questions = ({toggleQuestions}) => {
+const Questions = ({toggleQuestions, openModal}) => {
    return (
       <section className={st.questions}>
          <div className="container">
@@ -15,7 +15,7 @@ const Questions = ({toggleQuestions}) => {
                   <h2 className={`${st.questions__title} titleH2`}>Возможно у вас <span className="yellow-text">остались вопросы к нам</span>
                   </h2>
                   <div className={st.questions__subtitle}>Не нашли ответа на свой вопрос? Задайте его нам, а мы не будем отвечать</div>
-                  <a href="#" className={`${st.questions__btn} btn`}>Написать нам</a>
+                  <a href="#" onClick={openModal} className={`${st.questions__btn} btn`}>Написать нам</a>
                </div>
                <div className={st.questions__content}>
                   {questions.map((question, i) => {

@@ -6,12 +6,14 @@ import lottie from 'lottie-web'
 import { useEffect, useRef } from 'react'
 
 import ServiceForm from '../../components/service-form/ServiceForm';
+import OpenModalBtn from '../../components/open-modal-btn/OpenModalBtn';
+
 import st from './service.module.scss'
 
 import animJson from "./serviceAnim.json"
 
 
-const Service = () => {
+const Service = (props) => {
    const {id} = useParams()
 
    const service = services[id]
@@ -51,7 +53,7 @@ const Service = () => {
                   <div className={st.service__anim} ref={container} ></div>
                </div>
             </div>
-            <ServiceForm />
+            <OpenModalBtn openModal={props.openModal} />
          </div>
       </section>
    );

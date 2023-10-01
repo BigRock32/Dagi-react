@@ -132,11 +132,9 @@
 
 @media (max-width: 450px) {
   .form {
-    width: 100%;
-    max-width: 400px;
-    justify-content: center;
+    max-width: none;
     align-items: center;
-    flex-direction: column;
+    padding: 25px 20px;
   }
   .form__title {
     font-size: 22px;

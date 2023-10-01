@@ -10,17 +10,17 @@ const Burger = ({nav, setNav}) => {
       <div className={nav ? `burger-menu _active` : `burger-menu`}>
          <NavbarBurger setNav={setNav}/>
          <div className="footer__social footer__social_mob social-btns">
-            <a href="" className="footer__icon header-ic">
+            {/* <a href="" className="footer__icon header-ic">
                <img src={whatsapp} alt="" />
-            </a>
-            <a href="" className="footer__icon header-ic">
+            </a> */}
+            <a href="https://t.me/Vaska325" className="footer__icon header-ic">
                <img src={tg} alt="" />
             </a>
          </div>
-         <div className="header__btns header__btns_mob">
+         {/* <div className="header__btns header__btns_mob">
             <a href="" className="header__btn btn-lang">En</a>
             <a href="" className="header__btn btn-yellow">Заказать звонок</a>
-         </div>
+         </div> */}
       </div>
    );
 }

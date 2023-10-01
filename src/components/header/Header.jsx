@@ -23,8 +23,8 @@ const Header = (props) => {
                <Navbar />
                
                <div className="header__btns">
-                  <a href="" className="header__btn btn-lang">En</a>
-                  <a href='' className="header__btn btn-yellow" onClick={props.openModal}>Заказать звонок</a>
+                  {/* <a href="" className="header__btn btn-lang">En</a> */}
+                  <a href='' className="header__btn btn-yellow" onClick={props.openModal}>Связаться с нами</a>
                </div>
                <div className={props.nav ? `burger _active` : `burger`} onClick={props.setNav}>
                   <span></span>

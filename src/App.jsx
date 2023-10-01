@@ -102,7 +102,7 @@ function App(props) {
           <Route path='/contacts' element={<Contacts />} />
           <Route path='/projects' element={<Projects />} />
           <Route path='/project/:id' element={<Project />} />
-          <Route path='/service/:id' element={<Service />} />
+          <Route path='/service/:id' element={<Service openModal={openModal} />} />
         </Routes>
 
         <Modal active={modalActive} closeModal={closeModal} titleText={modalText} />

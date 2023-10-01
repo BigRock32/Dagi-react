@@ -934,6 +934,7 @@ h1, h2, h3, h4, h5, h6 {
   --border-color: #FFFFFF33;
   --light-bg: #FFFFFF0A;
   --text-color: rgba(255, 255, 255, 0.9);
+  --text-07: rgba(255, 255, 255, 0.7);
 }
 
 @font-face {

@@ -49,7 +49,7 @@ const Home = (props) => {
 
    return (
       <div className="wrapper">
-         <a href="" className="fixed-tg-link">
+         <a href="https://t.me/Vaska325" className="fixed-tg-link">
             <img src={tgFix} alt="телеграмм" />
          </a>
          <div className="bg-blur-1"></div>
@@ -88,7 +88,7 @@ const Home = (props) => {
                <div className="banner__wrap">
                   <h2 className="banner__title titleH2">Ещё не определились, какой тип сайта вам нужен?</h2>
                   <div className="banner__text">Оставьте заявку для получения бесплатной консультации по вашему бизнесу.</div>
-                  <a href="" className="banner__btn btn">Заказть консультацию</a>
+                  <a href="" onClick={props.openModal} className="banner__btn btn">Связаться с нами</a>
                </div>
             </div>
          </section>
@@ -159,7 +159,7 @@ const Home = (props) => {
             <div className="banner__wrap no-radius">
                <h2 className="banner__title titleH2">Ещё не определились, какой тип сайта вам нужен?</h2>
                <div className="banner__text">Оставьте заявку для получения бесплатной консультации по вашему бизнесу.</div>
-               <a href="" className="banner__btn btn">Заказть консультацию</a>
+               <a href="" className="banner__btn btn" onClick={props.openModal}>Связаться с нами</a>
             </div>
          </section>
 
@@ -208,7 +208,7 @@ const Home = (props) => {
                </div>
             </div>
          </section>
-         <Questions toggleQuestions={props.toggleQuestions} />
+         <Questions openModal={props.openModal} toggleQuestions={props.toggleQuestions} />
 
       </div>
    );

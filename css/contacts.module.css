@@ -41,3 +41,29 @@
 .contacts__form {
   width: 48%;
 }
+
+@media (max-width: 450px) {
+  .contacts {
+    padding-bottom: 80px;
+  }
+  .contacts__row {
+    flex-direction: column;
+    text-align: center;
+    gap: 50px;
+  }
+  .contacts__form {
+    width: 100%;
+  }
+  .contacts__contentRow {
+    gap: 25px;
+  }
+  .contacts__title {
+    margin-bottom: 30px;
+  }
+  .contacts__titleH2 {
+    margin-bottom: 10px;
+  }
+  .contacts__subtitle {
+    font-size: 14px;
+  }
+}
