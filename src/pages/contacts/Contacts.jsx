@@ -2,7 +2,7 @@ import st from './contacts.module.scss'
 
 import ContactsForm from './../../components/contacts-form/ContactsForm'
 
-const Contacts = () => {
+const Contacts = (props) => {
    return (
       <section className={`${st.contacts} first-screen-padding`}>
          <div className="container">
@@ -29,7 +29,7 @@ const Contacts = () => {
                   </div>
                </div>
                <div className={st.contacts__form}>
-                  <ContactsForm />
+                  <ContactsForm sendEmail={props.sendEmail} form={props.form} />
                </div>
             </div>
          </div>

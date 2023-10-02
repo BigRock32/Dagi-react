@@ -18,6 +18,9 @@ import Modal from './components/modal/Modal'
 
 import { useState } from 'react'
 
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+
 import { questions } from './helpers/questionsList'
 import Burger from './components/burger/Burger'
 
@@ -64,8 +67,8 @@ function App(props) {
   const [qustions, setQuestions] = useState(questions)
 
   const toggleQuestions = index => {
-    setQuestions(questions.map((question, i)=>{
-      if(i === index) {
+    setQuestions(questions.map((question, i) => {
+      if (i === index) {
         question.open = !question.open
       } else {
         question.open = false
@@ -84,6 +87,21 @@ function App(props) {
     setNavActive(!navActive)
   }
 
+  // SendMailFunc(EmailJs)
+  const form = useRef()
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_nt87tb9', 'template_l0is14t', form.current, 'aV61bNlOdX3SXEzH-')
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
+    e.target.reset()
+  }
+
 
 
   return (
@@ -95,17 +113,17 @@ function App(props) {
 
         <Header active={modalActive} openModal={openModal} fixed={headerFixed} setNav={burgerOpen} nav={navActive} />
 
-        <Burger nav={navActive} setNav={burgerOpen}/>
+        <Burger nav={navActive} setNav={burgerOpen} />
 
         <Routes>
           <Route path='/' element={<Home active={modalActive} openModal={openModal} toggleQuestions={toggleQuestions} />} />
-          <Route path='/contacts' element={<Contacts />} />
+          <Route path='/contacts' element={<Contacts sendEmail={sendEmail} form={form} />} />
           <Route path='/projects' element={<Projects />} />
           <Route path='/project/:id' element={<Project />} />
           <Route path='/service/:id' element={<Service openModal={openModal} />} />
         </Routes>
 
-        <Modal active={modalActive} closeModal={closeModal} titleText={modalText} />
+        <Modal active={modalActive} closeModal={closeModal} titleText={modalText} sendEmail={sendEmail} form={form} />
 
         <Footer />
 

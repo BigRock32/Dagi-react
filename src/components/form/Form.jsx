@@ -1,24 +1,9 @@
-import { useRef } from 'react';
 import st from './form.module.scss'
-import emailjs from '@emailjs/browser';
 
 const Form = (props) => {
-   const form = useRef()
-
-   const sendEmail = (e) => {
-      e.preventDefault();
-
-      emailjs.sendForm('service_nt87tb9', 'template_l0is14t', form.current, 'aV61bNlOdX3SXEzH-')
-         .then((result) => {
-            console.log(result.text);
-         }, (error) => {
-            console.log(error.text);
-         });
-         e.target.reset()
-   }
 
    return (
-      <form ref={form} onSubmit={sendEmail} name='popupForm' className={st.form}>
+      <form ref={props.form} onSubmit={props.sendEmail} name='popupForm' className={st.form}>
          <h2 className={st.form__title} >{props.titleText}</h2>
          <div className={`${st.form__item} ${st.form__item_first}`}>
             <input
