@@ -21,10 +21,12 @@ const Project = () => {
                <div className={st.head__top}>
                      <div className={st.head__lable}>Технологии:</div>
                      <div className={st.head__imgRow}>
-                        <img src={project.skills.figma} alt="" className={st.head__img} />
-                        <img src={project.skills.psd} alt="" className={st.head__img} />
-                        <img src={project.skills.figma} alt="" className={st.head__img} />
-                        <img src={project.skills.psd} alt="" className={st.head__img} />
+                        <img src={project.skills.figma} alt="figma" className={st.head__img} />
+                        <img src={project.skills.psd} alt="psd" className={st.head__img} />
+                        <img src={project.skills.ai} alt="ai" className={st.head__img} />
+                        <img src={project.skills.js} alt="js" className={st.head__img} />
+                        <img src={project.skills.sql} alt="sql" className={st.head__img} />
+                        <img src={project.skills.php} alt="php" className={st.head__img} />
                      </div>
                   </div>
                   <div className={st.head__bottom}>

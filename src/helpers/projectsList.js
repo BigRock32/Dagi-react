@@ -1,17 +1,21 @@
-import subboxPrev from './../media/subbox-prev.png'
-import subboxBig from './../media/subbox-big.png'
+import subboxPrev from './../media/subbox-prev.webp'
+import subboxBig from './../media/subbox-big.webp'
 
-import tzpchPrev from './../media/tzpch-prev.png'
-import tzpchBig from './../media/subbox-big.png'
+import tzpchPrev from './../media/tzpch-prev.webp'
+import tzpchBig from './../media/tzpch-big.webp'
 
-import proactivePrev from './../media/proactive-prev.png'
-import proactiveBig from './../media/proactive-big.png'
+import proactivePrev from './../media/proactive-prev.webp'
+import proactiveBig from './../media/proactive-big.webp'
 
-import greenwayPrev from './../media/greenway-prev.png'
-import greenwayBig from './../media/subbox-big.png'
+import greenwayPrev from './../media/greenway-prev.webp'
+import greenwayBig from './../media/greenway-big.webp'
 
 import figma from './../media/figma.svg'
 import psd from './../media/psd.svg'
+import ai from './../media/ai.svg'
+import js from './../media/js.svg'
+import sql from './../media/sql.svg'
+import php from './../media/php.svg'
 
 const projects = [
    {
@@ -28,6 +32,10 @@ const projects = [
       'skills':{
          figma: figma,
          psd: psd,
+         ai: ai,
+         js: js,
+         sql: sql,
+         php: php
       }
    },
 
@@ -45,6 +53,10 @@ const projects = [
       'skills':{
          figma: figma,
          psd: psd,
+         ai: ai,
+         js: js,
+         sql: sql,
+         php: php
       }
    },
 
@@ -62,6 +74,10 @@ const projects = [
       'skills':{
          figma: figma,
          psd: psd,
+         ai: ai,
+         js: js,
+         sql: sql,
+         php: php
       }
    },
 
@@ -79,6 +95,10 @@ const projects = [
       'skills':{
          figma: figma,
          psd: psd,
+         ai: ai,
+         js: js,
+         sql: sql,
+         php: php
       }
    },
 ]
