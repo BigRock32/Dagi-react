@@ -7,6 +7,8 @@ import st from './projects.module.scss'
 import { projects } from '../../helpers/projectsList';
 
 const Projects = () => {
+   const currentPath = window.location.pathname
+
    return (
       <section className={st.projects}>
          <div className="container">
@@ -15,7 +17,7 @@ const Projects = () => {
                   return <Project key={index} title={project.title} imgPrev={project.imgPrev} desc={project.descript} index={index} />
                })}
 
-               <ProjectsLink text='Смотреть все проекты' />
+               <ProjectsLink text={currentPath !== '/projects' ? 'Смотреть все проекты' : 'Венрунться на главную'} />
 
 
             </div>

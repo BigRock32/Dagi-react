@@ -3,9 +3,10 @@ import './projectsLink.scss'
 import { NavLink } from 'react-router-dom'
 
 const ProjectsLink = ({text}) => {
+   const currentPath = window.location.pathname
 
    return (
-      <NavLink to='/projects' className="link">
+      <NavLink to={currentPath !== '/projects' ? '/projects' : '/'} className="link">
             <div>{text}</div>
             <div className="link__line-box">
                <div className="link__line"></div>

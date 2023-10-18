@@ -39,7 +39,7 @@ const Project = () => {
                   <img src={project.imgPrev} alt="" className={st.project__image} />
                   <img src={project.imgBig} alt="" className={st.project__image} />
                </div>
-               <ProjectsLink text='Вернуться к проектам' />
+               <ProjectsLink text='Вернуться к проектам' path='/projects' />
             </div>
          </div>
       </section>
