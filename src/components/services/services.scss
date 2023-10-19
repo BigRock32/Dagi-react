@@ -9,7 +9,6 @@ section.horizontal {
 .h2Sticky {
    position: absolute;
    top: 0px;
-   left: 9.5vw;
    z-index: 10;
 }
 
@@ -28,7 +27,6 @@ section.horizontal {
 
 .animationWrap {
    gap: 30px;
-   padding-left: 9.5vw;
 }
 
 @media (max-width: 1440px) {
@@ -39,14 +37,6 @@ section.horizontal {
 @media (max-width: 1024px) {
    .services {
       padding-bottom: 80px;
-   }
-
-   .h2Sticky {
-      left: 3.5vw;
-   }
-
-   .animationWrap {
-      padding-left: 3.5vw;
    }
 }
 
@@ -72,7 +62,6 @@ section.horizontal {
    }
 
    .animationWrap {
-      padding-left: 0vw;
       gap: 20px;
    }
 }

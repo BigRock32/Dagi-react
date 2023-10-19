@@ -1,135 +1,155 @@
-import './scss/style.scss'
+import "./scss/style.scss"
 // import '../public/index.js'
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
-import ScrollToTop from './utils/scrollToTop'
+import ScrollToTop from "./utils/scrollToTop"
 
-import React from 'react'
+import React from "react"
 
-import Header from './components/header/Header'
-import Footer from './components/footer/Footer'
-import Home from './pages/home/Home'
-import Contacts from './pages/contacts/Contacts'
-import Projects from './pages/projects/Projects'
-import Project from './pages/project/Project'
-import Service from './pages/service/Service'
-import Modal from './components/modal/Modal'
+import Header from "./components/header/Header"
+import Footer from "./components/footer/Footer"
+import Home from "./pages/home/Home"
+import Contacts from "./pages/contacts/Contacts"
+import Projects from "./pages/projects/Projects"
+import Project from "./pages/project/Project"
+import Service from "./pages/service/Service"
+import Modal from "./components/modal/Modal"
 
-import { useState } from 'react'
+import { useState } from "react"
 
-import { useRef } from 'react';
-import emailjs from '@emailjs/browser';
+import { useRef } from "react"
+import emailjs from "@emailjs/browser"
 
-import { questions } from './helpers/questionsList'
-import Burger from './components/burger/Burger'
-
+import { questions } from "./helpers/questionsList"
+import Burger from "./components/burger/Burger"
 
 function App(props) {
-
   //Modal
   const [modalActive, setModalActive] = useState(false)
-  const [modalText, setModalText] = useState('')
-
+  const [modalText, setModalText] = useState("")
 
   const openModal = (e) => {
-    document.body.style.overflow = 'hidden'
+    document.body.style.overflow = "hidden"
     setModalText(e.target.innerText)
     setModalActive(true)
     e.preventDefault()
-  }
-
+  };
 
   const closeModal = () => {
-    document.body.style.overflowX = 'hidden'
-    document.body.style.overflowY = 'auto'
+    document.body.style.overflowX = "hidden"
+    document.body.style.overflowY = "auto"
     setModalActive(false)
-  }
-
+  };
 
   //Header Fixed
   const [headerFixed, setHeaderFixed] = useState(false)
 
-  window.addEventListener('scroll', () => {
+  window.addEventListener("scroll", () => {
     let scrollTop = window.pageYOffset
 
     if (scrollTop >= 10) {
-
       setHeaderFixed(true)
-
     } else {
       setHeaderFixed(false)
     }
-  })
-
+  });
 
   //Questions
   const [qustions, setQuestions] = useState(questions)
 
-  const toggleQuestions = index => {
-    setQuestions(questions.map((question, i) => {
-      if (i === index) {
-        question.open = !question.open
-      } else {
-        question.open = false
-      }
-
-      return question
-    }))
-  }
-
+  const toggleQuestions = (index) => {
+    setQuestions(
+      questions.map((question, i) => {
+        if (i === index) {
+          question.open = !question.open
+        } else {
+          question.open = false
+        }
+        return question
+      })
+    );
+  };
 
   // Burger
   const [navActive, setNavActive] = useState(false)
 
   const burgerOpen = () => {
-    document.body.classList.toggle('_lock')
+    document.body.classList.toggle("_lock")
     setNavActive(!navActive)
-  }
+  };
 
   // SendMailFunc(EmailJs)
-  const form = useRef()
+  const form = useRef();
 
   const sendEmail = (e) => {
-    e.preventDefault();
+    e.preventDefault()
 
-    emailjs.sendForm('service_nt87tb9', 'template_l0is14t', form.current, 'aV61bNlOdX3SXEzH-')
-      .then((result) => {
-        console.log(result.text);
-      }, (error) => {
-        console.log(error.text);
-      });
+    emailjs
+      .sendForm(
+        "service_nt87tb9",
+        "template_l0is14t",
+        form.current,
+        "aV61bNlOdX3SXEzH-"
+      )
+      .then(
+        (result) => {
+          console.log(result.text)
+        },
+        (error) => {
+          console.log(error.text)
+        }
+      );
     e.target.reset()
   }
 
-
-
   return (
     <div className="App">
-
       <Router>
-
         <ScrollToTop />
 
-        <Header active={modalActive} openModal={openModal} fixed={headerFixed} setNav={burgerOpen} nav={navActive} />
+        <Header
+          active={modalActive}
+          openModal={openModal}
+          fixed={headerFixed}
+          setNav={burgerOpen}
+          nav={navActive}
+        />
 
         <Burger nav={navActive} setNav={burgerOpen} />
 
         <Routes>
-          <Route path='/' element={<Home active={modalActive} openModal={openModal} toggleQuestions={toggleQuestions} />} />
-          <Route path='/contacts' element={<Contacts sendEmail={sendEmail} form={form} />} />
-          <Route path='/projects' element={<Projects />} />
-          <Route path='/project/:id' element={<Project />} />
-          <Route path='/service/:id' element={<Service openModal={openModal} />} />
+          <Route
+            path="/"
+            element={
+              <Home
+                active={modalActive}
+                openModal={openModal} toggleQuestions={toggleQuestions}
+              />
+            }
+          />
+          <Route
+            path="/contacts"
+            element={<Contacts sendEmail={sendEmail} form={form} />}
+          />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/project/:id" element={<Project />} />
+          <Route
+            path="/service/:id"
+            element={<Service openModal={openModal} />}
+          />
         </Routes>
 
-        <Modal active={modalActive} closeModal={closeModal} titleText={modalText} sendEmail={sendEmail} form={form} />
+        <Modal
+          active={modalActive}
+          closeModal={closeModal}
+          titleText={modalText}
+          sendEmail={sendEmail}
+          form={form}
+        />
 
         <Footer />
-
       </Router>
-
-
     </div>
   )
 }
