@@ -82,25 +82,24 @@ function App(props) {
   // SendMailFunc(EmailJs)
   const form = useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault()
+  const sendEmail = async () => {
+    // e.preventDefault()
 
-    emailjs
+    return emailjs
       .sendForm(
         "service_nt87tb9",
         "template_l0is14t",
         form.current,
         "aV61bNlOdX3SXEzH-"
       )
-      .then(
-        (result) => {
-          console.log(result.text)
-        },
-        (error) => {
-          console.log(error.text)
-        }
-      );
-    e.target.reset()
+    // .then(
+    //   (result) => {
+    //     console.log(result.text)
+    //   },
+    //   (error) => {
+    //     console.log(error.text)
+    //   }
+    // )
   }
 
   return (
