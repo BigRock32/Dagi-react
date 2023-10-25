@@ -5,6 +5,7 @@ import { useForm } from 'react-hook-form'
 import { useState } from "react"
 
 import successImg from '../../media/success-icon.svg'
+import close from '../../media/white-close.svg'
 
 const ContactsForm = ({ sendEmail, form }) => {
 
@@ -26,8 +27,13 @@ const ContactsForm = ({ sendEmail, form }) => {
          setShow('success')
       } catch (err) {
          setShow('error')
+         return
       }
       reset()
+   }
+
+   const closeSuccesWindow = () => {
+      setShow('initial')
    }
 
 
@@ -77,10 +83,12 @@ const ContactsForm = ({ sendEmail, form }) => {
             {show === 'success' && <div className={st.SuccesWindow}>
                <div className={st.SuccesWindow__title}>Заявка отправлена</div>
                <img src={successImg} alt="успешно" className={st.SuccesWindow__img} />
+               <img onClick={closeSuccesWindow} src={close} alt="закрыть" className={st.SuccesWindow__closeIcon} />
             </div>}
             {show === 'error' && <div className={st.SuccesWindow}>
                <div className={st.SuccesWindow__title}>Ошибка при отправке!</div>
                <img src={successImg} alt="ошибка" className={st.SuccesWindow__img} />
+               <img onClick={closeSuccesWindow} src={close} alt="закрыть" className={st.SuccesWindow__closeIcon} />
             </div>}
          </div>}
       </form>
