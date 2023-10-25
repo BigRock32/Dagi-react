@@ -93,11 +93,14 @@ body._lock{
 
 .container{
    max-width: 1530px;
+   // padding: 0px 10px;
    margin: 0 auto;
 }
 
 .wrapper{
+   position: relative;
    width: 100%;
+   overflow: hidden;
 }
 
 .first-screen-padding{
@@ -202,7 +205,6 @@ body._lock{
    }
 
    .bg-blur-circle{
-      position: absolute;
       top: 220px;
       right: -40%;
       width: 40vw;

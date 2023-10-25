@@ -1,0 +1,14 @@
+.button{
+   position: fixed;
+   top: 50%;
+   left: 4vw;
+   cursor: pointer;
+   color: var(--yellow);
+}
+
+@media (max-width: 1024px) {
+   .button{
+      top: 95%;
+      left: 2vw;
+   }
+}
