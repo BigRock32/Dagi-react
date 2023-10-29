@@ -1,14 +1,25 @@
 .button{
+   font-family: 'ProximaNova';
    position: fixed;
    top: 50%;
    left: 4vw;
    cursor: pointer;
    color: var(--yellow);
+
+   img{
+      padding-right: 10px;
+   }
 }
+
+// @media (max-width: 1920px) {
+//    .button{
+//       position: static;
+//       margin-bottom: 20px;
+//    }
+// }
 
 @media (max-width: 1024px) {
    .button{
-      top: 95%;
-      left: 2vw;
+      display: none;
    }
 }

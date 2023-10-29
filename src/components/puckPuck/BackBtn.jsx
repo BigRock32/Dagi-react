@@ -11,6 +11,7 @@ function BackBtn({ text }) {
    return (
       <div className={st.button} onClick={returnBack} >
          <img src={backIcon} alt="назад" />
+         {/* {text} */}
       </div>
    )
 }

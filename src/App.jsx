@@ -92,14 +92,6 @@ function App(props) {
         form.current,
         "aV61bNlOdX3SXEzH-"
       )
-    // .then(
-    //   (result) => {
-    //     console.log(result.text)
-    //   },
-    //   (error) => {
-    //     console.log(error.text)
-    //   }
-    // )
   }
 
   return (

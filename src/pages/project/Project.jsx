@@ -22,6 +22,7 @@ const Project = () => {
       <section className={`${st.project} first-screen-padding`}>
          <BackBtn text='Назад' />
          <div className="container">
+         {/* <BackBtn text='Назад' /> */}
             <h1 className={`${st.projects__title} title-h1`}>{project.title} <span className="yellow-text"></span></h1>
             <div className={`${st.project__head} ${st.head}`}>
                <div className={st.head__top}>
@@ -44,7 +45,7 @@ const Project = () => {
                   <img src={project.imgPrev} alt="" className={st.project__image} />
                   <img src={project.imgBig} alt="" className={st.project__image} />
                </div>
-               <ProjectsLink text='Другие наши проекты' path='/projects' />
+               <ProjectsLink text='Все наши проекты' path='/projects' />
             </div>
          </div>
       </section>
