@@ -17,7 +17,7 @@ const Contacts = (props) => {
                      </div>
                      <div className={st.contacts__item}>
                         <div className={st.contacts__socials}>
-                           <a href="https://t.me/Vaska325" className={`${st.contacts__link} titleH2`}>Telegram</a>
+                           <a href="https://t.me/dagiwebagancy" className={`${st.contacts__link} titleH2`}>Telegram</a>
                            <span className={`${st.contacts__sep} titleH2`}>/</span>
                            <a href="" className={`${st.contacts__link} titleH2`}>WhatsApp</a>
                         </div>

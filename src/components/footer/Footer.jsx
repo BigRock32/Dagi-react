@@ -44,7 +44,7 @@ const Footer = () => {
                               </defs>
                            </svg>
                         </a> */}
-                        <a href="https://t.me/Vaska325" className="footer__icon">
+                        <a href="https://t.me/dagiwebagancy">
                            <svg className="footer__icon" width="56" height="56" viewBox="0 0 56 56" fill="none" stroke="white" strokeOpacity="0.2" xmlns="http://www.w3.org/2000/svg">
                               <g filter="url(#filter0_b_664_933)">
                                  <rect width="56" height="56" rx="15" fill="white" fill-opacity="0.04" />
@@ -67,7 +67,7 @@ const Footer = () => {
                         {/* <a href="" className="footer__icon">
                            <img src={whatsapp} alt="" />
                         </a> */}
-                        <a href="https://t.me/Vaska325" className="footer__icon">
+                        <a href="https://t.me/dagiwebagancy" className="footer__icon">
                            <img src={tg} alt="" />
                         </a>
                      </div>

@@ -4,7 +4,7 @@ import tg from './../../media/tg-icon.svg'
 
 function TgButton() {
    return (
-      <a className={st.button} href='https://t.me/Vaska325'>
+      <a className={st.button} href='https://t.me/dagiwebagancy'>
          Перейти в Telegram
          <img src={tg} className={st.tgIcon} alt="иконка телеграмма" />
       </a>

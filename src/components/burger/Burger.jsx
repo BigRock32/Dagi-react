@@ -13,8 +13,8 @@ const Burger = ({nav, setNav}) => {
             {/* <a href="" className="footer__icon header-ic">
                <img src={whatsapp} alt="" />
             </a> */}
-            <a href="https://t.me/Vaska325" className="footer__icon header-ic">
-               <img src={tg} alt="" />
+            <a href="https://t.me/dagiwebagancy" className="footer__icon header-ic">
+               <img src={tg} alt="tg" />
             </a>
          </div>
          {/* <div className="header__btns header__btns_mob">
