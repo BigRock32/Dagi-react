@@ -15,6 +15,8 @@ import Projects from "./pages/projects/Projects"
 import Project from "./pages/project/Project"
 import Service from "./pages/service/Service"
 import Modal from "./components/modal/Modal"
+import Burger from "./components/burger/Burger"
+import FixedTgLink from "./components/fixed-tg-link/FixedTgLink"
 
 import { useState } from "react"
 
@@ -22,7 +24,6 @@ import { useRef } from "react"
 import emailjs from "@emailjs/browser"
 
 import { questions } from "./helpers/questionsList"
-import Burger from "./components/burger/Burger"
 
 function App(props) {
   //Modal
@@ -108,6 +109,8 @@ function App(props) {
         />
 
         <Burger nav={navActive} setNav={burgerOpen} />
+
+        <FixedTgLink />
 
         <Routes>
           <Route

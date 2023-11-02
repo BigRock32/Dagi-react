@@ -7,14 +7,14 @@
    &__row {
    }
 
-   &__wrap{
-      padding-bottom: 30px;
+   &__wrap {
+      padding-bottom: 25px;
       border-bottom: 1px solid var(--border-color);
    }
 
    &__top {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
    }
 
@@ -24,38 +24,38 @@
    &__logo-img {
    }
 
-   &__nav{
-      display: flex;
+   &__nav {
+      display: none;
       gap: 40px;
 
-      &_subnav{
+      &_subnav {
          gap: 30px;
       }
    }
 
-   &__subtop{
+   &__subtop {
       margin-top: 7px;
       display: flex;
       justify-content: center;
    }
 
    &__link {
-      font-family: 'ProximaNova';
+      font-family: "ProximaNova";
       color: var(--white-color);
       font-size: 18px;
       transition: color 0.35s ease;
 
-      &:hover{
+      &:hover {
          color: var(--yellow);
       }
 
-      &_sub{
-         font-family: 'Gilroy';
+      &_sub {
+         font-family: "Gilroy";
          color: var(--white-color);
          opacity: 0.7;
          transition: opacity 0.2s linear;
-   
-         &:hover{
+
+         &:hover {
             color: var(--white-color);
             opacity: 1;
          }
@@ -63,10 +63,10 @@
    }
 
    &__social {
-      display: flex;
+      display: none;
       gap: 15px;
 
-      &_mob{
+      &_mob {
          display: none;
       }
    }
@@ -75,14 +75,14 @@
       transition: all 0.3s ease;
       stroke-opacity: 0.2;
 
-      &_inner{
+      &_inner {
          fill-opacity: 0.5;
       }
 
-      &:hover{
+      &:hover {
          stroke-opacity: 1;
 
-         .footer__icon_inner{
+         .footer__icon_inner {
             fill-opacity: 1;
          }
       }
@@ -91,7 +91,7 @@
    &__bottom {
       display: flex;
       justify-content: space-between;
-      padding-top: 35px;
+      padding-top: 30px;
    }
 
    &__copywright {
@@ -103,7 +103,7 @@
       transition: color 0.35s ease;
       color: rgba(255, 255, 255, 0.6);
 
-      &:hover{
+      &:hover {
          color: rgba(255, 255, 255, 1);
       }
    }
@@ -113,45 +113,44 @@
       transition: color 0.35s ease;
       color: rgba(255, 255, 255, 0.6);
 
-      &:hover{
+      &:hover {
          color: rgba(255, 255, 255, 1);
       }
    }
 }
 
-
 @media (max-width: 1440px) {
-   .footer{
-      &__wrap{
+   .footer {
+      &__wrap {
          padding-bottom: 25px;
       }
 
-      &__link{
+      &__link {
          font-size: 16px;
       }
 
-      &__copywright{
+      &__copywright {
          font-size: 16px;
       }
 
-      &__mail{
+      &__mail {
          font-size: 16px;
       }
 
-      &__privacy{
+      &__privacy {
          font-size: 16px;
       }
 
-      &__bottom{
+      &__bottom {
          padding-top: 25px;
       }
    }
 }
 
 @media (max-width: 1024px) {
-   .footer{
-      &__wrap{
-         padding-bottom: 25px;
+   .footer {
+      &__wrap {
+         padding-bottom: 20px;
       }
 
       &__top {
@@ -161,7 +160,7 @@
          align-items: center;
       }
 
-      &__subtop{
+      &__subtop {
          display: flex;
          flex-direction: column;
          align-items: center;
@@ -169,7 +168,7 @@
          margin-top: 20px;
       }
 
-      &__link{
+      &__link {
          font-size: 16px;
       }
 
@@ -177,8 +176,8 @@
          display: none;
          gap: 15px;
 
-         &_mob{
-            display: flex;
+         &_mob {
+            display: none;
          }
       }
 
@@ -188,19 +187,19 @@
          height: 40px;
       }
 
-      &__copywright{
+      &__copywright {
          font-size: 16px;
       }
 
-      &__mail{
+      &__mail {
          font-size: 16px;
       }
 
-      &__privacy{
+      &__privacy {
          font-size: 16px;
       }
 
-      &__bottom{
+      &__bottom {
          flex-direction: column;
          align-items: center;
          gap: 10px;
@@ -209,11 +208,19 @@
    }
 }
 
+@media (max-width: 768px) {
+   .footer {
+      &__nav {
+         display: flex;
+         gap: 40px;
+      }
+   }
+}
 
 @media (max-width: 450px) {
-   .footer{
-      &__wrap{
-         padding-bottom: 25px;
+   .footer {
+      &__wrap {
+         padding-bottom: 10px;
          gap: 20px;
       }
 
@@ -224,13 +231,13 @@
          align-items: center;
       }
 
-      &__nav{
+      &__nav {
          flex-direction: column;
          align-items: center;
          gap: 15px;
       }
 
-      &__subtop{
+      &__subtop {
          display: flex;
          flex-direction: column;
          align-items: center;
@@ -238,14 +245,8 @@
          margin-top: 20px;
       }
 
-      &__link{
-         font-size: 14px;
-      }
-
-      &__social {
-         &_mob{
-            display: flex;
-         }
+      &__link {
+         font-size: 15px;
       }
 
       &__icon {
@@ -254,19 +255,19 @@
          height: 40px;
       }
 
-      &__copywright{
+      &__copywright {
          font-size: 14px;
       }
 
-      &__mail{
+      &__mail {
          font-size: 14px;
       }
 
-      &__privacy{
+      &__privacy {
          font-size: 14px;
       }
 
-      &__bottom{
+      &__bottom {
          flex-direction: column;
          align-items: center;
          gap: 10px;

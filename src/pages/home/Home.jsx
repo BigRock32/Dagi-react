@@ -36,9 +36,6 @@ const Home = (props) => {
 
   return (
     <div className="wrapper">
-      <a href="https://t.me/dagiwebagancy" className="fixed-tg-link">
-        <img src={tgFix} alt="телеграмм" />
-      </a>
       <div className="bg-blur-1"></div>
       <div className="bg-blur-circle"></div>
       <div className="bg-blur-circle circ-2"></div>

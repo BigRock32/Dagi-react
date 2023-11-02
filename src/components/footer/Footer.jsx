@@ -74,7 +74,7 @@ const Footer = () => {
                   </div>
                </div>
                <div className="footer__bottom">
-                  <div className="footer__copywright">© 2022 Dagi-web. Все права защищены</div>
+                  <div className="footer__copywright">© 2020 Dagi-web. Все права защищены</div>
                   <a href="mailto:dev@dagiweb.com" className="footer__mail">dev@dagiweb.com</a>
                   <a href="" className="footer__privacy">политика конфиденциальности</a>
                </div>

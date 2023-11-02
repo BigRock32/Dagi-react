@@ -10,9 +10,9 @@ const Burger = ({nav, setNav}) => {
       <div className={nav ? `burger-menu _active` : `burger-menu`}>
          <NavbarBurger setNav={setNav}/>
          <div className="footer__social footer__social_mob social-btns">
-            {/* <a href="" className="footer__icon header-ic">
+            <a href="" className="footer__icon header-ic">
                <img src={whatsapp} alt="" />
-            </a> */}
+            </a>
             <a href="https://t.me/dagiwebagancy" className="footer__icon header-ic">
                <img src={tg} alt="tg" />
             </a>
