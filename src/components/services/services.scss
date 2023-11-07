@@ -6,6 +6,10 @@ section.horizontal {
    padding-bottom: 120px;
 }
 
+.services.mobile {
+   display: none;
+}
+
 .h2Sticky {
    position: absolute;
    top: 0px;
@@ -49,6 +53,20 @@ section.horizontal {
 @media (max-width: 450px) {
    .services {
       padding-bottom: 80px;
+      &__wrap {
+         display: flex;
+         flex-direction: column;
+         gap: 25px;
+      }
+   }
+
+
+   .services.horizontal {
+      display: none;
+   }
+
+   .services.mobile {
+      display: block;
    }
 
    .h2Sticky {
