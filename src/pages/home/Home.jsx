@@ -32,6 +32,10 @@ const Home = (props) => {
     };
   }, []);
 
+  const MarquizOpen = () => {
+    Marquiz.showModal('655a0fe6035535002537c818')
+  }
+
   //services
 
   return (
@@ -59,13 +63,13 @@ const Home = (props) => {
                 к веб-разработке. Нашей целью в каждом проекте является
                 достижение максимального результата.
               </p>
-              <a
-                href=""
+              <button
                 className="first-screen__btn btn"
-                onClick={props.openModal}
+                // onClick={props.openModal}
+                onClick={MarquizOpen}
               >
                 Заказть консультацию
-              </a>
+              </button>
             </div>
             <div className="first-screen__right">
               <div className="first-screen__anim" ref={container}></div>
