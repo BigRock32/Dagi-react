@@ -17,7 +17,7 @@ const Projects = () => {
                   return <Project key={index} title={project.title} imgPrev={project.imgPrev} desc={project.descript} index={index} />
                })}
 
-               <ProjectsLink text={currentPath !== '/projects' ? 'Смотреть все проекты' : 'Венрунться на главную'} />
+               <ProjectsLink text={currentPath !== '/projects' ? 'Смотреть все проекты' : 'Вернунться на главную'} />
 
 
             </div>
