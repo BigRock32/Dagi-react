@@ -141,7 +141,6 @@ function App(props) {
           sendEmail={sendEmail}
           form={form}
         />
-
         <Footer />
       </Router>
     </div>

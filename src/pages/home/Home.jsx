@@ -36,6 +36,10 @@ const Home = (props) => {
     Marquiz.showModal('655a0fe6035535002537c818')
   }
 
+  // const MarquizBlock = () => {
+  //   (function (t, p) { window.Marquiz ? Marquiz.add([t, p]) : document.addEventListener('marquizLoaded', function () { Marquiz.add([t, p]) }) })('Inline', { id: '655a0fe6035535002537c818', buttonText: 'Пройти тест', bgColor: '#d34085', textColor: '#ffffff', radius: '10', indent: '30', width: '1500' })
+  // }
+
   //services
 
   return (
@@ -68,7 +72,7 @@ const Home = (props) => {
                 // onClick={props.openModal}
                 onClick={MarquizOpen}
               >
-                Заказть консультацию
+                Рассчитать стоимость
               </button>
             </div>
             <div className="first-screen__right">
@@ -89,12 +93,15 @@ const Home = (props) => {
               Ещё не определились, какой тип сайта вам нужен?
             </h2>
             <div className="banner__text">
-              Оставьте заявку для получения бесплатной консультации по вашему
+              Свяжитесь с нами для получения бесплатной консультации по вашему
               бизнесу.
             </div>
-            <a href="" onClick={props.openModal} className="banner__btn btn">
-              Связаться с нами
-            </a>
+            <button
+              // onClick={props.openModal}
+              onClick={MarquizOpen}
+              className="banner__btn btn">
+              Рассчитать стоимость
+            </button>
           </div>
         </div>
       </section>
@@ -237,12 +244,15 @@ const Home = (props) => {
             Ещё не определились, какой тип сайта вам нужен?
           </h2>
           <div className="banner__text">
-            Оставьте заявку для получения бесплатной консультации по вашему
+            Свяжитесь с нами для получения бесплатной консультации по вашему
             бизнесу.
           </div>
-          <a href="" className="banner__btn btn" onClick={props.openModal}>
-            Связаться с нами
-          </a>
+          <button className="banner__btn btn"
+            //  onClick={props.openModal}
+            onClick={MarquizOpen}
+          >
+            Рассчитать стоимость
+          </button>
         </div>
       </section>
 
